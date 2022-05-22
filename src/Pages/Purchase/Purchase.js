@@ -1,9 +1,10 @@
 import React from "react";
+import PurchaseModal from "./PurchaseModal";
 
 const Purchase = () => {
   return (
     <div>
-      <h2 className="text-red-500">Purchase</h2>
+      <PurchaseModal />
     </div>
   );
 };

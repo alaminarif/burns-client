@@ -9,6 +9,9 @@ import Purchase from "./Pages/Purchase/Purchase";
 import RequireAuth from "./Pages/Signin/RequireAuth";
 import Blogs from "./Pages/Blogs/Blogs";
 import MyProtfolio from "./Pages/MyProtfolio/MyProtfolio";
+import Dashboard from "./Pages/Dashboard/Dashboard";
+import MyOders from "./Pages/Dashboard/MyOders";
+import MyReviews from "./Pages/Dashboard/MyReviews";
 
 function App() {
   return (
@@ -26,6 +29,17 @@ function App() {
             </RequireAuth>
           }
         />
+        <Route
+          path="/dashboard"
+          element={
+            <RequireAuth>
+              <Dashboard />
+            </RequireAuth>
+          }
+        >
+          <Route index element={<MyOders />} />
+          <Route path="review" element={<MyReviews />} />
+        </Route>
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/myprotfolio" element={<MyProtfolio />} />
         <Route path="/signin" element={<Signin />} />
