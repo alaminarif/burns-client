@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "_id": 1,
     "rating": "*****",
     "shortDes": "Great customer service. Thanks for",
     "description": "Great customer service. Thanks for getting those tires on order for me Jeff. My son really appreciated them.",
@@ -9,7 +9,7 @@
     "img": "https://i.ibb.co/TBvjnSd/player-1.png"
   },
   {
-    "id": 2,
+    "_id": 2,
     "rating": "*****",
     "shortDes": "The staff are seasoned bike",
     "description": "The staff are seasoned bike riders themselves. They provide great technical knowledge with real world experience",
@@ -18,7 +18,7 @@
     "img": "https://i.ibb.co/WGFDvsT/player-2.png"
   },
   {
-    "id": 3,
+    "_id": 3,
     "rating": "*****",
     "shortDes": "Thanks for your help in",
     "description": "Thanks for your help in getting my equipment to me quickly and just as I had ordered!",
@@ -27,7 +27,7 @@
     "img": "https://i.ibb.co/2yXmKc0/player-4.png"
   },
   {
-    "id": 5,
+    "_id": 5,
     "rating": "*****",
     "shortDes": "Good service 👍 and good",
     "description": "Good service 👍 and good products for great price in all range.",
@@ -36,7 +36,7 @@
     "img": "https://i.ibb.co/zmpSWtg/player-5.png"
   },
   {
-    "id": 4,
+    "_id": 4,
     "rating": "*****",
     "shortDes": "ood products good customer service",
     "description": "Good products good customer service Wide selection Great deals",
@@ -45,7 +45,7 @@
     "img": "https://i.ibb.co/G9Gz0DL/player-3.png"
   },
   {
-    "id": 6,
+    "_id": 6,
     "rating": "*****",
     "shortDes": "Ray was a great help",
     "description": "Ray was a great help with picking out the perfect helmet. He knows his stuff and is able to sell you on every detail!",

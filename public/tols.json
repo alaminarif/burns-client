@@ -1,50 +1,56 @@
 [
   {
+    "-id": "1",
     "name": "Proxxon DS 460 2",
-    "img": "",
-    "description": "Magnesium saw arms precisely mounted on bearings: Extremely light and firm with a slender-shaped cutting area for an unobstructed view of the work piece. Chip blowing device with adjustable nozzle. Additional suction connection to connect a vacuum cleaner. Large saw table made of die-cast aluminium (400 x 250mm). For easier saw blade replacement, it can be unlocked and pushed back (see description at top right). Regular scroll saw blades are fastened by saw blade holders with high clamping force: ",
-    "minQuantity": "",
-    "avilabeQuantity": "",
-    "price": "420$"
+    "img": "https://i.ibb.co/xhJS2n9/2.jpg",
+    "description": " Large saw table made of die-cast aluminium (400 x 250mm). For easier saw blade replacement. Additional suction connection to connect a vacuum cleaner. ",
+    "minQuantity": "100",
+    "avilabeQuantity": "950",
+    "price": 520
   },
   {
-    "name": "",
-    "img": "",
-    "description": "Magnesium saw arms precisely mounted on bearings: Extremely light and firm with a slender-shaped cutting area for an unobstructed view of the work piece. Chip blowing device with adjustable nozzle. Additional suction connection to connect a vacuum cleaner. Large saw table made of die-cast aluminium (400 x 250mm). For easier saw blade replacement, it can be unlocked and pushed back (see description at top right). Regular scroll saw blades are fastened by saw blade holders with high clamping force: ",
-    "minQuantity": "",
-    "avilabeQuantity": "",
-    "price": "420$"
+    "-id": "2",
+    "name": "Wholesale Mxtovel 20V",
+    "img": "https://i.ibb.co/VJB7H7s/3.jpg",
+    "description": " Regular scroll saw blades are fastened by saw blade holders with high clamping force: Magnesium saw arms precisely mounted on bearings:   ",
+    "minQuantity": "90",
+    "avilabeQuantity": "900",
+    "price": 420
   },
   {
-    "name": "",
-    "img": "",
-    "description": "Magnesium saw arms precisely mounted on bearings: Extremely light and firm with a slender-shaped cutting area for an unobstructed view of the work piece. Chip blowing device with adjustable nozzle. Additional suction connection to connect a vacuum cleaner. Large saw table made of die-cast aluminium (400 x 250mm). For easier saw blade replacement, it can be unlocked and pushed back (see description at top right). Regular scroll saw blades are fastened by saw blade holders with high clamping force: ",
-    "minQuantity": "",
-    "avilabeQuantity": "",
-    "price": "420$"
+    "-id": "3",
+    "name": "Heavy Duty Cordless 20V",
+    "img": "https://i.ibb.co/4RTfJdQ/4.jpg",
+    "description": "it can be unlocked and pushed back (see description at top right). Regular scroll saw blades are fastened by saw blade holders with high clamping force: ",
+    "minQuantity": "80",
+    "avilabeQuantity": "800",
+    "price": 460
   },
   {
-    "name": "",
-    "img": "",
-    "description": "Magnesium saw arms precisely mounted on bearings: Extremely light and firm with a slender-shaped cutting area for an unobstructed view of the work piece. Chip blowing device with adjustable nozzle. Additional suction connection to connect a vacuum cleaner. Large saw table made of die-cast aluminium (400 x 250mm). For easier saw blade replacement, it can be unlocked and pushed back (see description at top right). Regular scroll saw blades are fastened by saw blade holders with high clamping force: ",
-    "minQuantity": "",
-    "avilabeQuantity": "",
-    "price": "420$"
+    "-id": "4",
+    "name": "Surgical Instrumen",
+    "img": "https://i.ibb.co/gtYpMxZ/5-g.jpg",
+    "description": " Chip blowing device with adjustable nozzle. Additional suction connection to connect a vacuum cleaner. Large saw table made of die-cast.  ",
+    "minQuantity": "110",
+    "avilabeQuantity": "1100",
+    "price": 450
   },
   {
-    "name": "",
-    "img": "",
-    "description": "Magnesium saw arms precisely mounted on bearings: Extremely light and firm with a slender-shaped cutting area for an unobstructed view of the work piece. Chip blowing device with adjustable nozzle. Additional suction connection to connect a vacuum cleaner. Large saw table made of die-cast aluminium (400 x 250mm). For easier saw blade replacement, it can be unlocked and pushed back (see description at top right). Regular scroll saw blades are fastened by saw blade holders with high clamping force: ",
-    "minQuantity": "",
-    "avilabeQuantity": "",
-    "price": "420$"
+    "-id": "5",
+    "name": "Multi Function Power ",
+    "img": "https://i.ibb.co/m6VW0WC/6-g.jpg",
+    "description": "Magnesium saw arms precisely mounted on bearings: Extremely light and firm with a slender-shaped cutting area for an unobstructed view of the work piece. ",
+    "minQuantity": "70",
+    "avilabeQuantity": "700",
+    "price": 430
   },
   {
-    "name": "",
-    "img": "",
-    "description": "Magnesium saw arms precisely mounted on bearings: Extremely light and firm with a slender-shaped cutting area for an unobstructed view of the work piece. Chip blowing device with adjustable nozzle. Additional suction connection to connect a vacuum cleaner. Large saw table made of die-cast aluminium (400 x 250mm). For easier saw blade replacement, it can be unlocked and pushed back (see description at top right). Regular scroll saw blades are fastened by saw blade holders with high clamping force: ",
-    "minQuantity": "",
-    "avilabeQuantity": "",
-    "price": "420$"
+    "-id": "6",
+    "name": "Fixtec Cordless Power",
+    "img": "https://i.ibb.co/y6RMWWD/7-g.jpg",
+    "description": " Additional suction connection to connect a vacuum cleaner. Large saw table made of die-cast aluminium (400 x 250mm). For easier saw blade replacement",
+    "minQuantity": "50",
+    "avilabeQuantity": "500",
+    "price": 420
   }
 ]

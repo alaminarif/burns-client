@@ -13,15 +13,34 @@ const Navbar = () => {
   const menuItems = (
     <>
       <li>
-        <Link to="/">Home</Link>
+        <Link to="/" className="uppercase font-medium">
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link to="/purchase" className="uppercase font-semibold ">
+          Purchase
+        </Link>
+      </li>
+      <li>
+        <Link to="/blogs" className="uppercase font-semibold ">
+          blogs
+        </Link>
+      </li>
+      <li>
+        <Link to="/myprotfolio" className="uppercase font-semibold ">
+          my protfolio
+        </Link>
       </li>
       <li>
         {user ? (
-          <button class="btn btn-ghost" onClick={logout}>
+          <button class="btn btn-ghost font-medium" onClick={logout}>
             Signout
           </button>
         ) : (
-          <Link to="/signin">Sign in</Link>
+          <Link to="/signin" className="font-medium">
+            Sign in
+          </Link>
         )}
       </li>
     </>

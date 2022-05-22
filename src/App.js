@@ -5,7 +5,10 @@ import Signin from "./Pages/Signin/Signin";
 import NotFount from "./Pages/Share/NotFount";
 import Signup from "./Pages/Signin/Signup";
 import Navbar from "./Pages/Share/Navbar";
-import Footer from "./Pages/Share/Footer/Footer";
+import Purchase from "./Pages/Purchase/Purchase";
+import RequireAuth from "./Pages/Signin/RequireAuth";
+import Blogs from "./Pages/Blogs/Blogs";
+import MyProtfolio from "./Pages/MyProtfolio/MyProtfolio";
 
 function App() {
   return (
@@ -14,11 +17,21 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route
+          path="/purchase"
+          element={
+            <RequireAuth>
+              <Purchase />
+            </RequireAuth>
+          }
+        />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/myprotfolio" element={<MyProtfolio />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="*" element={<NotFount></NotFount>}></Route>
       </Routes>
-      <Footer />
     </div>
   );
 }
