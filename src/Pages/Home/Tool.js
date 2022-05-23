@@ -12,7 +12,7 @@ const Tool = ({ tool }) => {
       <img src={img} className="rounded-lg" alt="" />
       <h2 className="text-2xl font-semibold mt-4">{name}</h2>
       <p>${price}</p>
-      <p>{description}</p>
+      <p className="text-justify">{description}</p>
       <p>{minQuantity}</p>
       <p>{avilabeQuantity}</p>
       <button class="btn btn-primary uppercase mt-4" onClick={() => handleBuyNow(_id)}>

@@ -14,7 +14,7 @@ const PurchaseDetails = () => {
       .then((res) => res.json())
       .then((data) => setPurchase(data));
   }, []);
-  console.log(purchaseId);
+
   return (
     <div className="shadow-xl w-9/12 mx-auto ">
       <div class="card  lg:card-side bg-base-100   my-12 p-8">
@@ -27,9 +27,13 @@ const PurchaseDetails = () => {
           <p>${price}</p>
         </div>
       </div>
-      <form className="w-full mx-auto ">
-        <h2 className="text-center">form</h2>
-        <input className="placeholder-red-500" type="text" placeholder={user.displayName} />
+      <form className=" grid grid-cols-1 justify-items-center gap-6 py-6 ">
+        <input type="text" readOnly placeholder={user?.displayName} class="input input-bordered placeholder-black  w-6/12 max-w-xs" />
+        <input type="text" readOnly placeholder={user?.email} class="input input-bordered placeholder-black  w-6/12 max-w-xs" />
+        <input type="text" placeholder="Number" class="input input-bordered  w-6/12 max-w-xs" />
+        <input type="address" placeholder="Address" class="input input-bordered w-6/12 max-w-xs" />
+        <input type="text" placeholder="Quantity" class="input input-bordered w-6/12 max-w-xs" />
+        <input type="submit" value="place oder" className="btn btn-primary w-6/12 max-w-xs mb-6" />
       </form>
     </div>
   );
