@@ -1,10 +1,10 @@
 import React from "react";
-import PurchaseModal from "./PurchaseModal";
+import PurchaseDetails from "./PurchaseDetails";
 
 const Purchase = () => {
   return (
     <div>
-      <PurchaseModal />
+      <PurchaseDetails />
     </div>
   );
 };

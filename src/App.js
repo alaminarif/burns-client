@@ -22,7 +22,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route
-          path="/purchase"
+          path="/purchase/:purchaseId"
           element={
             <RequireAuth>
               <Purchase />
