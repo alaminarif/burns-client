@@ -6,7 +6,7 @@ Burns Server Side[https://shielded-falls-95338.herokuapp.com/](https://shielded-
 
 ## Website Descreption:
 
-- home page added header, banner section, two meaningful section, six tools item, review section and footer.
+- home page added header, banner section, business summary, two meaningful section, six tools item, review section and footer.
 - Create My Portfolio route. In this route, you will have your name, email address, educational background, list of technologies or skills you have as a web developer.
 - Implement email/password-based authentication.
 - If a user is logged in, he will see more options like Dashboard, My Oders, My Review, Logout.

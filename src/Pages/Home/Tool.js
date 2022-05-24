@@ -11,10 +11,11 @@ const Tool = ({ tool }) => {
     <div>
       <img src={img} className="rounded-lg" alt="" />
       <h2 className="text-2xl font-semibold mt-4">{name}</h2>
-      <p>${price}</p>
       <p className="text-justify">{description}</p>
-      <p>{minQuantity}</p>
-      <p>{avilabeQuantity}</p>
+      <p className="flex justify-between mt-2 text-primary ">
+        <span>Minimum Order: {minQuantity}</span> <span>Available: {avilabeQuantity}</span>
+      </p>
+      <p>Price: ${price}</p>
       <button class="btn btn-primary uppercase mt-4" onClick={() => handleBuyNow(_id)}>
         {" "}
         buy now
