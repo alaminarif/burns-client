@@ -16,17 +16,17 @@ const Dashboard = () => {
         <label htmlFor="dashboard-sidebar" class="drawer-overlay"></label>
         <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
           {/* <!-- Sidebar content here --> */}
-
+          <li>
+            <Link to="/dashboard/myprofile" className="uppercase font-semibold ">
+              my profile
+            </Link>
+          </li>
           <li>
             <Link className="uppercase font-semibold " to="/dashboard">
               My Oders
             </Link>
           </li>
-          <li>
-            <Link to="/dashboard/myprotfolio" className="uppercase font-semibold ">
-              my protfolio
-            </Link>
-          </li>
+
           <li>
             <Link className="uppercase font-semibold " to="/dashboard/review">
               My Review

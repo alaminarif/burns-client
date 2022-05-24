@@ -18,14 +18,19 @@ const Navbar = () => {
         </Link>
       </li>
 
-      <li>
+      {/* <li>
         <Link to="/purchase" className="uppercase font-semibold ">
           Purchase
         </Link>
-      </li>
+      </li> */}
       <li>
         <Link to="/blogs" className="uppercase font-semibold ">
           blogs
+        </Link>
+      </li>
+      <li>
+        <Link to="/myprotfolio" className="uppercase font-semibold ">
+          my protfolio
         </Link>
       </li>
 
@@ -63,8 +68,8 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
-          Burns
+        <Link to="/" className="btn btn-ghost normal-case text-primary uppercase text-xl">
+          BURNS
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
