@@ -1,8 +1,8 @@
 # wh-cycle
 
-Burns Client Side [https://assigment-11-c7971.web.app/](https://assigment-11-c7971.web.app/).
+Burns Client Side [https://assignment-12-8ce0f.web.app/](https://assignment-12-8ce0f.web.app/).
 
-Burns Server Side[https://fast-tundra-99003.herokuapp.com/](https://fast-tundra-99003.herokuapp.com/)
+Burns Server Side[https://shielded-falls-95338.herokuapp.com/](https://shielded-falls-95338.herokuapp.com/)
 
 ## Website Descreption:
 

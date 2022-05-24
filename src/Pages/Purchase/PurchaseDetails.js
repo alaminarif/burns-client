@@ -9,7 +9,7 @@ const PurchaseDetails = () => {
   const [purchase, setPurchase] = useState([]);
   const { name, img, price, minQuantity, avilabeQuantity, description } = purchase;
   useEffect(() => {
-    const url = `http://localhost:5000/purchase/${purchaseId}`;
+    const url = `https://shielded-falls-95338.herokuapp.com/purchase/${purchaseId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setPurchase(data));
