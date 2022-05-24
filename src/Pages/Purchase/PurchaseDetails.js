@@ -25,16 +25,16 @@ const PurchaseDetails = () => {
           <h2 class="card-title">{name}</h2>
           <p className="flex-grow-0">{description}</p>
           <p>${price}</p>
+          <form className=" grid grid-cols-1 justify-items-center gap-6 py-6 ">
+            <input type="text" readOnly placeholder={user?.displayName} class="input input-bordered placeholder-black  w-9/12 max-w-xs" />
+            <input type="text" readOnly placeholder={user?.email} class="input input-bordered placeholder-black  w-9/12 max-w-xs" />
+            <input type="text" placeholder="Number" class="input input-bordered  w-9/12 max-w-xs" />
+            <input type="address" placeholder="Address" class="input input-bordered w-9/12 max-w-xs" />
+            <input type="text" placeholder="Quantity" class="input input-bordered w-9/12 max-w-xs" />
+            <input type="submit" value="place oder" className="btn btn-primary w-9/12 max-w-xs mb-6" />
+          </form>
         </div>
       </div>
-      <form className=" grid grid-cols-1 justify-items-center gap-6 py-6 ">
-        <input type="text" readOnly placeholder={user?.displayName} class="input input-bordered placeholder-black  w-6/12 max-w-xs" />
-        <input type="text" readOnly placeholder={user?.email} class="input input-bordered placeholder-black  w-6/12 max-w-xs" />
-        <input type="text" placeholder="Number" class="input input-bordered  w-6/12 max-w-xs" />
-        <input type="address" placeholder="Address" class="input input-bordered w-6/12 max-w-xs" />
-        <input type="text" placeholder="Quantity" class="input input-bordered w-6/12 max-w-xs" />
-        <input type="submit" value="place oder" className="btn btn-primary w-6/12 max-w-xs mb-6" />
-      </form>
     </div>
   );
 };

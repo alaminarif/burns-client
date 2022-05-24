@@ -12,7 +12,7 @@ const Tools = () => {
   }, []);
   return (
     <div className="">
-      <h3 className="text-center text-5xl font-bold mb-12 uppercase">Our Tools</h3>
+      <h3 className="text-center text-4xl tracking-widest font-bold mb-16 my-8 uppercase">Our Tools</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 ">
         {tools.map((tool) => (
           <Tool key={tool._id} tool={tool} />

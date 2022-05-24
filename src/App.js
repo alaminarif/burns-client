@@ -38,10 +38,10 @@ function App() {
           }
         >
           <Route index element={<MyOders />} />
+          <Route path="myprotfolio" element={<MyProtfolio />} />
           <Route path="review" element={<MyReviews />} />
         </Route>
         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/myprotfolio" element={<MyProtfolio />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="*" element={<NotFount></NotFount>}></Route>
