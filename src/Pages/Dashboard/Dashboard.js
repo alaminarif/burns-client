@@ -29,7 +29,7 @@ const Dashboard = () => {
 
           <li>
             <Link className="uppercase font-semibold " to="/dashboard/review">
-              My Review
+              Add Review
             </Link>
           </li>
         </ul>

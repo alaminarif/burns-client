@@ -14,8 +14,8 @@ const MyProtfolio = () => {
         </figure>
         <div className="">
           <p className="text-2xl">
-            I am working as a frontend developer for the last two years. I always focus on high quality service and 100% client. Love to work with any
-            front-end related projects in any latest front-end development technology.
+            I am working as a frontend developer. I always focus on high quality service and 100% client. Love to work with any front-end related
+            projects in any latest front-end development technology.
           </p>
           <h4 className="font-bold text-2xl uppercase mt-6 mb-4">Contact</h4>
           <p className="text-2xl">Call: 01793911158</p>

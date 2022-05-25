@@ -1,7 +1,7 @@
 import React from "react";
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import Loading from "../Share/Loading";
 const Signup = () => {
@@ -14,6 +14,8 @@ const Signup = () => {
     handleSubmit,
   } = useForm();
   const navigate = useNavigate();
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
   if (loading || gLoading) {
     return <Loading />;
   }
@@ -21,13 +23,15 @@ const Signup = () => {
   if (error || gError || updateError) {
     signInError = <p className="text-red-500">{error?.message || gError?.message || updateError?.message}</p>;
   }
-  if (user || gUser || updateProfile) {
-    console.log(user || gUser || updateProfile);
+  if (user || gUser) {
+    console.log(user || gUser);
+    navigate(from, { replace: true });
   }
+
   const onSubmit = async (data) => {
     await createUserWithEmailAndPassword(data.email, data.password);
     await await updateProfile({ displayName: data.name });
-    navigate("/home");
+    // navigate("/home");
   };
   return (
     <div className="h-screen flex justify-center items-center">
