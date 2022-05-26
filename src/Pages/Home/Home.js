@@ -23,6 +23,7 @@ const Home = () => {
       setInError(IncraseError);
     }
   };
+
   const handleDecrease = () => {
     const result = decrease - 1;
     let decreaseError;
@@ -35,6 +36,7 @@ const Home = () => {
       setError(decreaseError);
     }
   };
+
   return (
     <div className="px-12 ">
       <Banner />

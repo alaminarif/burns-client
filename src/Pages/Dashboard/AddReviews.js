@@ -26,6 +26,7 @@ const AddReviews = () => {
 
   return (
     <div>
+      <h3 className="font-bold text-2xl py-6 text-center"> Add A Review</h3>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="grid grid-cols-1 justify-items-center gap-6 py-6 w-full">
           <input className="input input-bordered w-6/12 " placeholder="Name" type="text" {...register("name")} />

@@ -31,6 +31,7 @@ const ManageProducts = () => {
   };
   return (
     <div>
+      <h3 className="font-bold text-2xl py-6 text-center"> Manage Products</h3>
       <div class="overflow-x-auto">
         <table class="table w-full">
           <thead>
@@ -59,7 +60,6 @@ const ManageProducts = () => {
           </tbody>
         </table>
       </div>
-      <h1>My products {products.length}</h1>
     </div>
   );
 };

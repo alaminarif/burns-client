@@ -31,7 +31,7 @@ const MyOders = () => {
   return (
     <div>
       <div class="overflow-x-auto">
-        <h3 className="font-bold text-2xl my-8"> My Oders</h3>
+        <h3 className="font-bold text-2xl my-6 text-center"> My Oders</h3>
         <table class="table w-full">
           <thead>
             <tr>

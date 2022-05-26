@@ -19,6 +19,8 @@ import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders";
 import AddProduct from "./Pages/Dashboard/AddProduct";
 import ManageProducts from "./Pages/Dashboard/ManageProducts";
 import UpdateProfile from "./Pages/Dashboard/MyProfile/UpdateProfile";
+import MakeAdmin from "./Pages/Dashboard/MakeAdmin";
+import RequireAdmin from "./Pages/Signin/RequireAdmin";
 
 function App() {
   return (
@@ -47,10 +49,32 @@ function App() {
           }
         >
           <Route path="review" element={<AddReviews />} />
-          <Route path="manageallorders" element={<ManageAllOrders />} />
+          <Route
+            path="manageallorders"
+            element={
+              <RequireAdmin>
+                <ManageAllOrders />
+              </RequireAdmin>
+            }
+          />
           <Route path="manageproduct" element={<ManageProducts />} />
           <Route path="myoder" element={<MyOders />} />
-          <Route path="addproduct" element={<AddProduct />} />
+          <Route
+            path="addproduct"
+            element={
+              <RequireAdmin>
+                <AddProduct />
+              </RequireAdmin>
+            }
+          />
+          <Route
+            path="makeadmin"
+            element={
+              <RequireAdmin>
+                <MakeAdmin />
+              </RequireAdmin>
+            }
+          />
           <Route index element={<MyProfile />} />
         </Route>
         <Route path="/blogs" element={<Blogs />} />
@@ -64,4 +88,3 @@ function App() {
 }
 
 export default App;
-// '0091bca339ce3f9e92c9b7615e5a48381911af7ec8b38625f9500b779223650125b0c91da7f621d026793b67dc207b69'
