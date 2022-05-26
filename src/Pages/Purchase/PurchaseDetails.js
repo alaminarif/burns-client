@@ -31,10 +31,11 @@ const PurchaseDetails = () => {
     axios.post("http://localhost:5000/oder", oder).then((response) => {
       const { data } = response;
       console.log(response);
-      if (data.insertedId) {
-        toast("oder success");
-        e.target.reset();
-      }
+      // if (data.insertedId) {
+      //   toast("oder success");
+      //   e.target.reset();
+      // }
+      toast.success("oder success");
       e.target.reset();
     });
   };

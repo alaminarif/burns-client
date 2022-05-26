@@ -31,13 +31,14 @@ const MyOders = () => {
   return (
     <div>
       <div class="overflow-x-auto">
+        <h3 className="font-bold text-2xl my-8"> My Oders</h3>
         <table class="table w-full">
           <thead>
             <tr>
               <th>No</th>
               <th>Id</th>
               <th>Quantity</th>
-              <th>Payment</th>
+              <th>Oder status</th>
               <th>Delete</th>
             </tr>
           </thead>
@@ -62,7 +63,6 @@ const MyOders = () => {
           </tbody>
         </table>
       </div>
-      <h1>My Oders {oders.length}</h1>
     </div>
   );
 };
