@@ -35,6 +35,7 @@ const PurchaseDetails = () => {
         toast("oder success");
         e.target.reset();
       }
+      e.target.reset();
     });
   };
 

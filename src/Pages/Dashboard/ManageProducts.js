@@ -2,28 +2,29 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 
-const MyOders = () => {
+const ManageProducts = () => {
   const [user] = useAuthState(auth);
-  const [oders, setOder] = useState([]);
+  const [products, setproduct] = useState([]);
   useEffect(() => {
-    const url = `http://localhost:5000/oder?email=${user.email}`;
+    // ?email=${user.email}
+    const url = `http://localhost:5000/purchase`;
 
     fetch(url)
       .then((res) => res.json())
-      .then((data) => setOder(data));
+      .then((data) => setproduct(data));
   }, [user]);
   const handleDelete = (id) => {
     const procced = window.confirm("are you sure?");
     if (procced) {
-      const url = `http://localhost:5000/oder/${id}`;
+      const url = `http://localhost:5000/purchase/${id}`;
       console.log(url);
       fetch(url, {
         method: "DELETE",
       })
         .then((res) => res.json())
         .then((data) => {
-          const remaining = oders.filter((oder) => oder._id !== id);
-          setOder(remaining);
+          const remaining = products.filter((product) => product._id !== id);
+          setproduct(remaining);
           console.log(data);
         });
     }
@@ -35,26 +36,22 @@ const MyOders = () => {
           <thead>
             <tr>
               <th>No</th>
-              <th>Id</th>
-              <th>Quantity</th>
-              <th>Payment</th>
+              <th>Product Name</th>
+              <th>price</th>
               <th>Delete</th>
             </tr>
           </thead>
           <tbody>
-            {oders.map((oder, index) => (
+            {products.map((product, index) => (
               <tr>
                 <th>{index + 1}</th>
-                <td>{oder._id}</td>
-                <td>{oder.quantity}</td>
+                <td>{product.name}</td>
+                <td>${product.price}</td>
+
                 <td>
                   {" "}
-                  <button className="btn btn-sm btn-primary">Paid</button>
-                </td>
-                <td>
-                  {" "}
-                  <button onClick={() => handleDelete(oder._id)} className="btn btn-sm btn-primary">
-                    cancel
+                  <button onClick={() => handleDelete(product._id)} className="btn btn-sm btn-primary">
+                    delete
                   </button>
                 </td>
               </tr>
@@ -62,9 +59,9 @@ const MyOders = () => {
           </tbody>
         </table>
       </div>
-      <h1>My Oders {oders.length}</h1>
+      <h1>My products {products.length}</h1>
     </div>
   );
 };
 
-export default MyOders;
+export default ManageProducts;

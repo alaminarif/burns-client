@@ -11,11 +11,13 @@ import Blogs from "./Pages/Blogs/Blogs";
 import MyProtfolio from "./Pages/MyProtfolio/MyProtfolio";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import MyOders from "./Pages/Dashboard/MyOders";
-import MyReviews from "./Pages/Dashboard/MyReviews";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import MyProfile from "./Pages/Dashboard/MyProfile/MyProfile";
 import AddReviews from "./Pages/Dashboard/AddReviews";
+import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders";
+import AddProduct from "./Pages/Dashboard/AddProduct";
+import ManageProducts from "./Pages/Dashboard/ManageProducts";
 
 function App() {
   return (
@@ -42,10 +44,12 @@ function App() {
             </RequireAuth>
           }
         >
-          <Route path="myprofile" element={<MyProfile />} />
-
           <Route path="review" element={<AddReviews />} />
-          <Route index element={<MyOders />} />
+          <Route path="manageallorders" element={<ManageAllOrders />} />
+          <Route path="manageproduct" element={<ManageProducts />} />
+          <Route path="myoder" element={<MyOders />} />
+          <Route path="addproduct" element={<AddProduct />} />
+          <Route index element={<MyProfile />} />
         </Route>
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/signin" element={<Signin />} />
