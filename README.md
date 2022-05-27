@@ -24,9 +24,12 @@ Burns Server Side[https://shielded-falls-95338.herokuapp.com/](https://shielded-
 - Firebase Authenticetion
 - React Firebase Hooks Authenticetion
 - React Form Hooks
+- React Query
+- React Tostify
 
 #### Server Side:
 
 - Nodejs
 - Expressjs
 - MongoDB
+- Json Web token

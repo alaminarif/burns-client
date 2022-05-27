@@ -1,9 +1,32 @@
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
+import auth from "../../../firebase.init";
 
 const UpdateProfile = () => {
+  const [user] = useAuthState(auth);
+  console.log(user?.email);
   const { register, handleSubmit, reset } = useForm();
-  const onSubmit = (data) => {};
+  const onSubmit = (data) => {
+    console.log(data);
+    const url = `http://localhost:5000/myprofile?email=${user?.email}`;
+    fetch(url, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        console.log(result);
+        if (result.insertedId) {
+          toast.success("success review");
+        }
+      });
+    reset();
+  };
   return (
     <div>
       <h3>update profile</h3>

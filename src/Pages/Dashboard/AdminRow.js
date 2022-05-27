@@ -1,7 +1,7 @@
 import React from "react";
 import { toast } from "react-toastify";
 
-const AdminRow = ({ user, users, setUser }) => {
+const AdminRow = ({ user, users, setUser, index }) => {
   const { _id, email, role } = user;
   const handleMakeAdmin = () => {
     const url = `http://localhost:5000/user/admin/${email}`;
@@ -37,7 +37,7 @@ const AdminRow = ({ user, users, setUser }) => {
   };
   return (
     <tr>
-      <th>1</th>
+      <th>{index}</th>
 
       <td>${email}</td>
 

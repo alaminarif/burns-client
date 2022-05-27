@@ -26,13 +26,8 @@ const Dashboard = () => {
           {admin ? (
             <>
               <li>
-                <Link className="uppercase font-semibold " to="/dashboard/manageallorders">
-                  Manage All Orders
-                </Link>
-              </li>
-              <li>
-                <Link className="uppercase font-semibold " to="/dashboard/manageproduct">
-                  Manage Product
+                <Link className="uppercase font-semibold " to="/dashboard/makeadmin">
+                  make a admin
                 </Link>
               </li>
               <li>
@@ -40,9 +35,15 @@ const Dashboard = () => {
                   Add a product
                 </Link>
               </li>
+
               <li>
-                <Link className="uppercase font-semibold " to="/dashboard/makeadmin">
-                  make a admin
+                <Link className="uppercase font-semibold " to="/dashboard/manageproduct">
+                  Manage Product
+                </Link>
+              </li>
+              <li>
+                <Link className="uppercase font-semibold " to="/dashboard/manageallorders">
+                  Manage All Orders
                 </Link>
               </li>
             </>
