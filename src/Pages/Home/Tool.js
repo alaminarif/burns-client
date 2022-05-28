@@ -8,7 +8,7 @@ const Tool = ({ tool }) => {
     navigate(`purchase/${id}`);
   };
   return (
-    <div>
+    <div className="w-96 bg-base-100 shadow-xl p-8 rounded-xl">
       <img src={img} className="rounded-lg" alt="" />
       <h2 className="text-2xl font-semibold mt-4">{name}</h2>
       <p className="text-justify">{description}</p>
@@ -16,7 +16,7 @@ const Tool = ({ tool }) => {
         <span>Minimum Order: {minQuantity}</span> <span>Available: {avilabeQuantity}</span>
       </p>
       <p>Price: ${price}</p>
-      <button class="btn btn-primary uppercase mt-4" onClick={() => handleBuyNow(_id)}>
+      <button class="btn btn-primary w-full uppercase mt-4" onClick={() => handleBuyNow(_id)}>
         {" "}
         buy now
       </button>

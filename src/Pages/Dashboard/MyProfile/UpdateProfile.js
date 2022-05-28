@@ -22,23 +22,24 @@ const UpdateProfile = () => {
       .then((result) => {
         console.log(result);
         if (result.insertedId) {
-          toast.success("success review");
+          toast.success("success added");
         }
       });
     reset();
   };
   return (
-    <div>
-      <h3>update profile</h3>
-      <form onSubmit={handleSubmit(onSubmit)}>
+    <div className="grid grid-cols-1 justify-items-center py-8">
+      <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 justify-items-center gap-6 w-96 bg-base-100 shadow-xl px-8">
+        <input className="input input-bordered w-full " placeholder="email" type="email" {...register("email")} />
         <div className="grid grid-cols-1 justify-items-center gap-6 py-6 w-full">
-          <input className="input input-bordered w-6/12 " placeholder="Education" type="text" {...register("education")} />
-          <input className="input input-bordered w-6/12 " placeholder="Number" type="number" {...register("number")} />
+          <input className="input input-bordered w-full " placeholder="Education" type="text" {...register("education")} />
 
-          <input className="input input-bordered w-6/12 " placeholder="Address" type="text" {...register("address")} />
+          <input className="input input-bordered w-full " placeholder="Number" type="number" {...register("number")} />
 
-          <input className="input input-bordered w-6/12 " placeholder="LinkeIn Link" type="text" {...register("linkein")} />
-          <input className="btn btn-primary w-6/12  mb-6" type="submit" value="Submit" />
+          <input className="input input-bordered w-full " placeholder="Address" type="text" {...register("address")} />
+
+          <input className="input input-bordered w-full " placeholder="LinkeIn Link" type="text" {...register("linkein")} />
+          <input className="btn btn-primary w-full  mb-6" type="submit" value="Submit" />
         </div>
       </form>
     </div>

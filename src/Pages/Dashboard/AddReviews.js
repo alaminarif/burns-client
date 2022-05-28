@@ -27,15 +27,15 @@ const AddReviews = () => {
   return (
     <div>
       <h3 className="font-bold text-2xl py-6 text-center"> Add A Review</h3>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="grid grid-cols-1 justify-items-center gap-6 py-6 w-full">
-          <input className="input input-bordered w-6/12 " placeholder="Name" type="text" {...register("name")} />
-          <input className="input input-bordered w-6/12 " placeholder="Rating" type="text" {...register("rating")} />
-          <input className="input input-bordered w-6/12 " placeholder="Date" type="date" {...register("date")} />
-          <input className="input input-bordered w-6/12 " placeholder="Image Url" type="text" {...register("image")} />
-          <input className="input input-bordered w-6/12 " placeholder="Description Heading" type="text" {...register("descriptionHeading")} />
-          <input className="input input-bordered w-6/12 " placeholder="Description" type="text" {...register("description")} />
-          <input className="btn btn-primary w-6/12  mb-6" type="submit" value="Add Review" />
+      <form className="flex justify-center" onSubmit={handleSubmit(onSubmit)}>
+        <div className="grid grid-cols-1 justify-items-center gap-6 py-6 w-96 bg-base-100 shadow-xl px-8 rounded-xl">
+          <input className="input input-bordered w-full " placeholder="Name" type="text" {...register("name")} />
+          <input className="input input-bordered w-full " placeholder="Rating" type="text" {...register("rating")} />
+          <input className="input input-bordered w-full " placeholder="Date" type="date" {...register("date")} />
+          <input className="input input-bordered w-full " placeholder="Image Url" type="text" {...register("image")} />
+          <input className="input input-bordered w-full " placeholder="Description Heading" type="text" {...register("descriptionHeading")} />
+          <input className="input input-bordered w-full " placeholder="Description" type="text" {...register("description")} />
+          <input className="btn btn-primary w-full  mb-6" type="submit" value="Add Review" />
         </div>
       </form>
     </div>

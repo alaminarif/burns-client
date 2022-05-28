@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <footer class="footer text-base-content">
+    <div className=" py-6">
+      <footer class="footer  max-w-7xl mx-auto ">
         <div>
           <span class="footer-title">Services</span>
           <a class="link link-hover">Branding</a>

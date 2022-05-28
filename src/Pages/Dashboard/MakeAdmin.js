@@ -5,32 +5,22 @@ import Loading from "../Share/Loading";
 import AdminRow from "./AdminRow";
 
 const MakeAdmin = () => {
-  // const {
-  //   data: users,
-  //   isLoading,
-  //   refetch,
-  // } = useQuery("users", () =>
-  //   fetch("http://localhost:5000/user", {
-  //     method: "GET",
-  //     headers: {
-  //       authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-  //     },
-  //   }).then((res) => res.json())
-  // );
-  // if (isLoading) {
-  //   return <Loading></Loading>;
-
-  const [users, setUser] = useState([]);
-  useEffect(() => {
+  const {
+    data: users,
+    isLoading,
+    refetch,
+  } = useQuery("users", () =>
     fetch("http://localhost:5000/user", {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
       },
-    })
-      .then((res) => res.json())
-      .then((data) => setUser(data));
-  }, []);
+    }).then((res) => res.json())
+  );
+  if (isLoading) {
+    return <Loading></Loading>;
+  }
+
   return (
     <div>
       <h3 className="font-bold text-2xl my-6 text-center">Make Admin</h3>
@@ -47,7 +37,7 @@ const MakeAdmin = () => {
           </thead>
           <tbody>
             {users.map((user, index) => (
-              <AdminRow key={user._id} users={users} setUser={setUser} user={user} index={index + 1} />
+              <AdminRow key={user._id} users={users} user={user} index={index + 1} refetch={refetch} />
             ))}
           </tbody>
         </table>

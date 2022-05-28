@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
 
 const MyProfile = () => {
   const [user] = useAuthState(auth);
+  const [mUsers, mSetUser] = useState([]);
   const navigate = useNavigate();
 
   const { displayName, email } = user;
   const handleUpdateprofile = () => {
+    const url = `http://localhost:5000/myprofile`;
+    console.log(url);
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => mSetUser(data));
     navigate("/updateprofile");
   };
   return (
@@ -19,11 +25,12 @@ const MyProfile = () => {
       <p className="font-semibold text-2xl mb-4"> {displayName}</p>
       <p className="font-bold">Email</p>
       <p className="font-semibold text-2xl mb-4"> {email}</p>
-      <p className="font-bold mt-4">Education</p>
+      <p className="font-bold mt-4">Education {}</p>
       <p className="font-bold mt-4">Phone</p>
       <p className="font-bold mt-4">City</p>
       <p className="font-bold mt-4">Linkedin profile</p>
-      <button onClick={handleUpdateprofile} className="btn btn-primary my-4">
+
+      <button for="myProfile-update" onClick={handleUpdateprofile} className="btn btn-primary my-4">
         Update Profile
       </button>
     </div>

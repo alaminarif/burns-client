@@ -55,9 +55,8 @@ const PurchaseDetails = () => {
           <p> price: ${price}</p>
         </div>
 
-        <div class=" card-body w-9/12">
-          <h3>Purchase</h3>
-          <form onSubmit={handleSubmit} className=" grid grid-cols-1 justify-items-center gap-6 ">
+        <div class=" card-body w-9/12 mt-0">
+          <form onSubmit={handleSubmit} className=" grid grid-cols-1 justify-items-center gap-6 w-96 bg-base-100 shadow-xl px-8 ">
             <input type="text" name="name" readOnly value={user?.displayName} class="input input-bordered  w-full" />
             <input type="text" name="email" readOnly value={user?.email} class="input input-bordered   w-full" />
             <input type="text" name="number" placeholder="Number" class="input input-bordered w-full" />

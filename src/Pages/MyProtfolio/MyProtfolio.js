@@ -6,8 +6,8 @@ import protfolio3 from "../../Images/Screenshot_98.png";
 
 const MyProtfolio = () => {
   return (
-    <div>
-      <h3 className="text-center text-4xl tracking-widest font-bold mb-16 my-8 uppercase"> about me </h3>
+    <div className="max-w-7xl mx-auto">
+      <h3 className="text-center text-4xl tracking-widest font-bold mb-16 my-8 uppercase "> about me </h3>
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <figure>
           <img src={About} alt="" />
@@ -23,12 +23,12 @@ const MyProtfolio = () => {
           <address className="text-2xl">Dumki, Patuakhali.</address>
           <h3 className="font-bold text-2xl uppercase my-6">skills :</h3>
           <div className="flex flex-wrap gap-6">
-            <button className="font-bold  btn btn-secondary p-2">Html</button>
-            <button className="font-semibold  btn btn-secondary ">Css</button>
-            <button className="font-semibold  btn btn-secondary ">Bootstrap</button>
-            <button className="font-semibold  btn btn-secondary ">Tailwind Css</button>
-            <button className="font-semibold  btn btn-secondary ">Javascript</button>
-            <button className="font-semibold  btn btn-secondary ">React</button>
+            <button className="font-bold  btn btn-accent p-2">Html</button>
+            <button className="font-semibold  btn btn-accent ">Css</button>
+            <button className="font-semibold  btn btn-accent ">Bootstrap</button>
+            <button className="font-semibold  btn btn-accent">Tailwind Css</button>
+            <button className="font-semibold  btn btn-accent ">Javascript</button>
+            <button className="font-semibold  btn btn-accent ">React</button>
           </div>
           <h3 className="font-bold text-2xl uppercase my-6">Education</h3>
           <p className="">

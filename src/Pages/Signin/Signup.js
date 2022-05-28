@@ -18,7 +18,7 @@ const Signup = () => {
   const navigate = useNavigate();
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
-  if (loading || gLoading) {
+  if (loading || gLoading || updating) {
     return <Loading />;
   }
   let signInError;
@@ -37,7 +37,7 @@ const Signup = () => {
   };
   return (
     <div className="h-screen flex justify-center items-center">
-      <div class="card w-96 bg-base-100 shadow-xl">
+      <div class="card w-96 bg-base-100 shadow-xl rounded-xl">
         <div class="card-body">
           <h2 class="text-center text-2xl font-bold">Sign in</h2>
           <form onSubmit={handleSubmit(onSubmit)}>

@@ -24,7 +24,7 @@ import RequireAdmin from "./Pages/Signin/RequireAdmin";
 
 function App() {
   return (
-    <div className=" max-w-7xl mx-auto">
+    <div className=" ">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
