@@ -2,7 +2,7 @@ import React from "react";
 import mainBannr from "../../Images/bg.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faFlag, faMessage, faRectangleList, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faFlag, faMessage, faRectangleList, faUsers } from "@fortawesome/free-solid-svg-icons";
 const BusinessSummary = () => {
   // const Business =
 

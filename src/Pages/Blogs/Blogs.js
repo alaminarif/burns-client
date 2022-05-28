@@ -1,5 +1,4 @@
 import React from "react";
-import { BeakerIcon } from "@heroicons/react/solid";
 
 const Blogs = () => {
   return (
@@ -54,7 +53,6 @@ const Blogs = () => {
           <li>05. </li>
         </ul>
       </div>
-      <BeakerIcon className="w-6 " />
     </div>
   );
 };
