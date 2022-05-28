@@ -6,7 +6,7 @@ const MyOders = () => {
   const [user] = useAuthState(auth);
   const [oders, setOder] = useState([]);
   useEffect(() => {
-    const url = `http://localhost:5000/oder?email=${user.email}`;
+    const url = `https://shielded-falls-95338.herokuapp.com/oder?email=${user.email}`;
 
     fetch(url)
       .then((res) => res.json())
@@ -15,7 +15,7 @@ const MyOders = () => {
   const handleDelete = (id) => {
     const procced = window.confirm("are you sure?");
     if (procced) {
-      const url = `http://localhost:5000/oder/${id}`;
+      const url = `https://shielded-falls-95338.herokuapp.com/oder/${id}`;
       console.log(url);
       fetch(url, {
         method: "DELETE",

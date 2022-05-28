@@ -6,7 +6,7 @@ const AdminRow = ({ user, index, refetch }) => {
   const handleMakeAdmin = () => {
     const procced = window.confirm("are you sure?");
     if (procced) {
-      const url = `http://localhost:5000/user/admin/${email}`;
+      const url = `https://shielded-falls-95338.herokuapp.com/user/admin/${email}`;
       console.log(url);
       fetch(url, {
         method: "PUT",
@@ -25,7 +25,7 @@ const AdminRow = ({ user, index, refetch }) => {
   const handleDelete = (id) => {
     const procced = window.confirm("are you sure?");
     if (procced) {
-      const url = `http://localhost:5000/user/${id}`;
+      const url = `https://shielded-falls-95338.herokuapp.com/user/${id}`;
       console.log(url);
       fetch(url, {
         method: "DELETE",

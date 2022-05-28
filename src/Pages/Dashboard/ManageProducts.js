@@ -7,7 +7,7 @@ const ManageProducts = () => {
   const [products, setproduct] = useState([]);
   useEffect(() => {
     // ?email=${user.email}
-    const url = `http://localhost:5000/purchase`;
+    const url = `https://shielded-falls-95338.herokuapp.com/purchase`;
 
     fetch(url)
       .then((res) => res.json())
@@ -16,7 +16,7 @@ const ManageProducts = () => {
   const handleDelete = (id) => {
     const procced = window.confirm("are you sure?");
     if (procced) {
-      const url = `http://localhost:5000/purchase/${id}`;
+      const url = `https://shielded-falls-95338.herokuapp.com/purchase/${id}`;
       console.log(url);
       fetch(url, {
         method: "DELETE",

@@ -10,7 +10,7 @@ const MyProfile = () => {
 
   const { displayName, email } = user;
   const handleUpdateprofile = () => {
-    const url = `http://localhost:5000/myprofile`;
+    const url = `https://shielded-falls-95338.herokuapp.com/myprofile`;
     console.log(url);
     fetch(url)
       .then((res) => res.json())

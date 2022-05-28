@@ -6,7 +6,7 @@ const AddProduct = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    const url = `http://localhost:5000/purchase`;
+    const url = `https://shielded-falls-95338.herokuapp.com/purchase`;
     fetch(url, {
       method: "POST",
       headers: {

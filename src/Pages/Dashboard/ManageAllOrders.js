@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const ManageAllOrders = () => {
   const [oders, setOder] = useState([]);
   useEffect(() => {
-    const url = "http://localhost:5000/alloder";
+    const url = "https://shielded-falls-95338.herokuapp.com/alloder";
 
     fetch(url)
       .then((res) => res.json())
@@ -12,7 +12,7 @@ const ManageAllOrders = () => {
   const handleDelete = (id) => {
     const procced = window.confirm("are you sure?");
     if (procced) {
-      const url = `http://localhost:5000/oder/${id}`;
+      const url = `https://shielded-falls-95338.herokuapp.com/oder/${id}`;
       console.log(url);
       fetch(url, {
         method: "DELETE",

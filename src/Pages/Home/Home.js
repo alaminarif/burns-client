@@ -46,11 +46,11 @@ const Home = () => {
       <div className="max-w-7xl mx-auto">
         {" "}
         <Tools />
-        <BusinessSummary />
         <Banner />
         <Reviews />
         <Contact />
       </div>
+      <BusinessSummary />
       <Footer />
       <button onClick={handleIncrease}> +</button>
       <p>

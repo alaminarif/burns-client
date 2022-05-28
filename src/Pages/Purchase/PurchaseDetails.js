@@ -28,7 +28,7 @@ const PurchaseDetails = () => {
       number: e.target.number.value,
       quantity: e.target.quantity.value,
     };
-    axios.post("http://localhost:5000/oder", oder).then((response) => {
+    axios.post("https://shielded-falls-95338.herokuapp.com/oder", oder).then((response) => {
       const { data } = response;
       console.log(response);
       // if (data.insertedId) {

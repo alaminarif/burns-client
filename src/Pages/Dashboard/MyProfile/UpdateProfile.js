@@ -10,7 +10,7 @@ const UpdateProfile = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    const url = `http://localhost:5000/myprofile?email=${user?.email}`;
+    const url = `https://shielded-falls-95338.herokuapp.com/myprofile?email=${user?.email}`;
     fetch(url, {
       method: "PUT",
       headers: {
