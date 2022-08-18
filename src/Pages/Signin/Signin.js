@@ -34,9 +34,9 @@ const Signin = () => {
   };
   return (
     <div className="h-screen flex justify-center items-center">
-      <div class="card w-96 bg-base-100 shadow-xl rounded-xl">
-        <div class="card-body">
-          <h2 class="text-center text-2xl font-bold">Sign in</h2>
+      <div className="card w-96 bg-base-100 shadow-xl rounded-xl">
+        <div className="card-body">
+          <h2 className="text-center text-2xl font-bold">Sign in</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-control w-full max-w-xs">
               <label className="label">
@@ -95,8 +95,8 @@ const Signin = () => {
               create new account
             </Link>
           </p>
-          <div class="divider">OR</div>
-          <button onClick={() => signInWithGoogle()} class="btn btn-outline btn-primary">
+          <div className="divider">OR</div>
+          <button onClick={() => signInWithGoogle()} className="btn btn-outline btn-primary">
             Continue with google
           </button>
         </div>

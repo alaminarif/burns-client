@@ -44,7 +44,7 @@ const Navbar = () => {
       )}
       <li>
         {user ? (
-          <button class="btn btn-ghost font-medium" onClick={logout}>
+          <button className="btn btn-ghost font-medium" onClick={logout}>
             Signout
           </button>
         ) : (
@@ -57,7 +57,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-black-rgba text-white">
+    <div className="bg-black-rgba lg:text-white">
       <div className="navbar py-6 justify-between max-w-7xl mx-auto ">
         <div className="navbar-start ">
           <div className="dropdown">

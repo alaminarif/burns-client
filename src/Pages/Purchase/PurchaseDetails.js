@@ -42,12 +42,12 @@ const PurchaseDetails = () => {
 
   return (
     <div className="shadow-xl w-9/12 mx-auto ">
-      <div class="card  lg:card-side bg-base-100   my-12 p-8">
+      <div className="card  lg:card-side bg-base-100   my-12 p-8">
         <div className="">
           <figure>
             <img src={img} className="  rounded" alt="Album" />
           </figure>
-          <h2 class="card-title">{name}</h2>
+          <h2 className="card-title">{name}</h2>
           <p className="">{description}</p>
           <p className="flex justify-between mt-2 text-primary ">
             <span>Minimum Order: {minQuantity}</span> <span>Available: {avilabeQuantity}</span>
@@ -55,13 +55,13 @@ const PurchaseDetails = () => {
           <p> price: ${price}</p>
         </div>
 
-        <div class=" card-body w-9/12 mt-0">
+        <div className=" card-body w-9/12 mt-0">
           <form onSubmit={handleSubmit} className=" grid grid-cols-1 justify-items-center gap-6 w-96 bg-base-100 shadow-xl px-8 ">
-            <input type="text" name="name" readOnly value={user?.displayName} class="input input-bordered  w-full" />
-            <input type="text" name="email" readOnly value={user?.email} class="input input-bordered   w-full" />
-            <input type="text" name="number" placeholder="Number" class="input input-bordered w-full" />
-            <input type="address" name="address" placeholder="Address" class="input input-bordered w-full" />
-            <input type="text" name="quantity" placeholder="Quantity" class="input input-bordered w-full" />
+            <input type="text" name="name" readOnly value={user?.displayName} className="input input-bordered  w-full" />
+            <input type="text" name="email" readOnly value={user?.email} className="input input-bordered   w-full" />
+            <input type="text" name="number" placeholder="Number" className="input input-bordered w-full" />
+            <input type="address" name="address" placeholder="Address" className="input input-bordered w-full" />
+            <input type="text" name="quantity" placeholder="Quantity" className="input input-bordered w-full" />
             <input type="submit" value="place oder" className="btn btn-primary w-full mb-6" />
           </form>
         </div>

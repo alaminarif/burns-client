@@ -6,7 +6,7 @@ import protfolio3 from "../../Images/Screenshot_98.png";
 
 const MyProtfolio = () => {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto sm:px-8">
       <h3 className="text-center text-4xl tracking-widest font-bold mb-16 my-8 uppercase "> about me </h3>
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <figure>

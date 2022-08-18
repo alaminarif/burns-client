@@ -4,25 +4,22 @@ import mainBannr from "../../Images/banner-o.jpg";
 const MainBanner = () => {
   return (
     <div
+      class="hero min-h-screen bg-no-repeat
+    bg-cover
+    bg-center"
       style={{
         background: `url(${mainBannr})`,
       }}
-      className="h-screen
-      bg-no-repeat
-      bg-cover
-      bg-center  "
     >
-      <div className="h-full bg-black-rgba">
-        <div className=" h-full bg-neutral-800  flex flex-col justify-center items-center ">
-          <h1 className=" text-white text-2xl lg:text-6xl font-semibold uppercase w-6/12 ">best power tools and sales available</h1>
-          <p className="text-white text-2xl font-semibold lg:font-bold capitalize w-6/12 my-8 ">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">best power tools and sales available</h1>
+          <p class="mb-5">
             Magnesium saw arms precisely mounted on bearings: Extremely light and firm with a slender-shaped cutting area for an unobstructed view of
             the work piece
           </p>
-          <div className="">
-            <button className="btn btn-primary btn-lg mr-4">Explore tools</button>
-            <button className="btn btn-primary btn-lg w-48 text-lx">about us</button>
-          </div>
+          <button class="btn btn-primary">Get Started</button>
         </div>
       </div>
     </div>
@@ -30,3 +27,16 @@ const MainBanner = () => {
 };
 
 export default MainBanner;
+
+// <div
+//     style={{
+//       background: `url(${mainBannr})`,
+//     }}
+//     className="h-screen
+//     bg-no-repeat
+//     bg-cover
+//     bg-center  "
+//   ></div>
+// best power tools and sales available
+
+//   Magnesium saw arms precisely mounted on bearings: Extremely light and firm with a slender-shaped cutting area for an unobstructed view of the work piece

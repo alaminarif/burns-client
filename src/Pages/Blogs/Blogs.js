@@ -2,7 +2,7 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div className="grid  grid-cols-1 lg:grid-cols-2 justify-items-center gap-12 py-12 max-w-7xl mx-auto">
+    <div className="grid  grid-cols-1 lg:grid-cols-2 justify-items-center gap-12 sm:p-12 max-w-7xl mx-auto ">
       {/* <h2 className="text-center text-4xl tracking-widest font-bold mb-16 my-8 uppercase">Blogs</h2> */}
       <div className="border border-primary rounded-xl p-8 ">
         <h3 className="font-bold text-2xl mb-4">How will you improve the performance of a React Application.</h3>
@@ -41,16 +41,6 @@ const Blogs = () => {
           <li> 02. In his book "Working Effectively with Legacy Code". </li>
           <li>03. The isolated part of the definition is important. </li>
           <li>04. In most programming languages, that is a function, a subroutine, a method or property. </li>
-        </ul>
-      </div>
-      <div className="border border-primary rounded-xl p-8 ">
-        <h3 className="font-bold text-2xl mb-4">What are the different ways to manage a state in a React application.</h3>
-        <ul className="text-2xl ml-4 line leading-10">
-          <li>01. </li>
-          <li> 02 </li>
-          <li>03. </li>
-          <li>04. </li>
-          <li>05. </li>
         </ul>
       </div>
     </div>

@@ -16,7 +16,7 @@ const Tool = ({ tool }) => {
         <span>Minimum Order: {minQuantity}</span> <span>Available: {avilabeQuantity}</span>
       </p>
       <p>Price: ${price}</p>
-      <button class="btn btn-primary w-full uppercase mt-4" onClick={() => handleBuyNow(_id)}>
+      <button className="btn btn-primary w-full uppercase mt-4" onClick={() => handleBuyNow(_id)}>
         {" "}
         buy now
       </button>
