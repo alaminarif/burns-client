@@ -8,7 +8,7 @@ const Tool = ({ tool }) => {
     navigate(`purchase/${id}`);
   };
   return (
-    <div className="w-96 bg-base-100 shadow-xl p-8 rounded-xl">
+    <div className="w-96 bg-base-100 shadow-xl  p-8 rounded-xl">
       <img src={img} className="rounded-lg" alt="" />
       <h2 className="text-2xl font-semibold mt-4">{name}</h2>
       <p className="text-justify">{description}</p>

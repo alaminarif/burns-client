@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import auth from "../../firebase.init";
+import auth from "../../../firebase.init";
+import OrderDeletingConfirmation from "../../Components/Modal/OrderDeletingConfirmation";
 
 const MyOders = () => {
   const [user] = useAuthState(auth);
   const [oders, setOder] = useState([]);
+  const [deletingOder, setDeletingOder] = useState(null);
   useEffect(() => {
     const url = `https://shielded-falls-95338.herokuapp.com/oder?email=${user.email}`;
 
@@ -12,22 +14,7 @@ const MyOders = () => {
       .then((res) => res.json())
       .then((data) => setOder(data));
   }, [user]);
-  const handleDelete = (id) => {
-    const procced = window.confirm("are you sure?");
-    if (procced) {
-      const url = `https://shielded-falls-95338.herokuapp.com/oder/${id}`;
-      console.log(url);
-      fetch(url, {
-        method: "DELETE",
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          const remaining = oders.filter((oder) => oder._id !== id);
-          setOder(remaining);
-          console.log(data);
-        });
-    }
-  };
+
   return (
     <div>
       <div className="overflow-x-auto">
@@ -54,15 +41,16 @@ const MyOders = () => {
                 </td>
                 <td>
                   {" "}
-                  <button onClick={() => handleDelete(oder._id)} className="btn btn-sm btn-primary">
-                    cancel
-                  </button>
+                  <label htmlFor="my-oder-delete-modal" onClick={() => setDeletingOder(oder)} class="btn btn-sm btn-primary">
+                    Cancel
+                  </label>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+      {deletingOder && <OrderDeletingConfirmation deletingOder={deletingOder} setDeletingOder={setDeletingOder} />}
     </div>
   );
 };

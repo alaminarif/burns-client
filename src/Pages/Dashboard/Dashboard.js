@@ -1,3 +1,4 @@
+import { signOut } from "firebase/auth";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, Outlet } from "react-router-dom";
@@ -5,8 +6,13 @@ import auth from "../../firebase.init";
 import useAdmin from "../../hooks/useAdmin";
 
 const Dashboard = () => {
-  const [user] = useAuthState(auth);
+  const [user, loading, error] = useAuthState(auth);
+
   const [admin] = useAdmin(user);
+  const logout = () => {
+    signOut(auth);
+    localStorage.removeItem("accessToken");
+  };
   return (
     <div className="drawer drawer-mobile max-w-7xl mx-auto ">
       <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
@@ -26,8 +32,8 @@ const Dashboard = () => {
           {admin ? (
             <>
               <li>
-                <Link className="uppercase font-semibold " to="/dashboard/makeadmin">
-                  make a admin
+                <Link className="uppercase font-semibold " to="/dashboard/manage-user">
+                  Manage User
                 </Link>
               </li>
               <li>
@@ -61,6 +67,13 @@ const Dashboard = () => {
               </li>
             </>
           )}
+          <li>
+            {user && (
+              <button className="uppercase font-bold btn btn-primary text-white" onClick={logout}>
+                Logout
+              </button>
+            )}
+          </li>
         </ul>
       </div>
     </div>

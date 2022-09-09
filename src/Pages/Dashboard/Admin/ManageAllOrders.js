@@ -1,31 +1,24 @@
 import React, { useEffect, useState } from "react";
+import { useQuery } from "react-query";
+import Loading from "../../Share/Loading";
+import ManageAllOrderDeletingConfirmation from "../../Components/Modal/ManageAllOrderDeletingConfirmation";
 
 const ManageAllOrders = () => {
-  const [oders, setOder] = useState([]);
-  useEffect(() => {
-    const url = "https://shielded-falls-95338.herokuapp.com/alloder";
+  // const [oders, setOder] = useState([]);
 
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => setOder(data));
-  }, []);
-  const handleDelete = (id) => {
-    const procced = window.confirm("are you sure?");
-    if (procced) {
-      const url = `https://shielded-falls-95338.herokuapp.com/oder/${id}`;
-      console.log(url);
-      fetch(url, {
-        method: "DELETE",
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          const remaining = oders.filter((oder) => oder._id !== id);
-          setOder(remaining);
-          console.log(data);
-        });
-    }
-  };
+  const [deletingOder, setDeletingOrder] = useState(null);
 
+  const {
+    data: oders,
+    isLoading,
+    refetch,
+  } = useQuery("manageOders", () => {
+    return fetch("https://shielded-falls-95338.herokuapp.com/alloder").then((res) => res.json());
+  });
+
+  if (isLoading) {
+    <Loading />;
+  }
   return (
     <div>
       <div className="overflow-x-auto">
@@ -41,7 +34,7 @@ const ManageAllOrders = () => {
             </tr>
           </thead>
           <tbody>
-            {oders.map((oder, index) => (
+            {oders?.map((oder, index) => (
               <tr>
                 <th>{index + 1}</th>
                 <td>{oder._id}</td>
@@ -52,15 +45,18 @@ const ManageAllOrders = () => {
                 </td>
                 <td>
                   {" "}
-                  <button onClick={() => handleDelete(oder._id)} className="btn btn-sm btn-primary">
+                  <label onClick={() => setDeletingOrder(oder)} htmlFor="order-deleting-modal" class="btn btn-sm btn-error text-white">
                     cancel
-                  </button>
+                  </label>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+      {deletingOder && (
+        <ManageAllOrderDeletingConfirmation deletingOder={deletingOder} setDeletingOrder={setDeletingOrder} oders={oders} refetch={refetch} />
+      )}
     </div>
   );
 };

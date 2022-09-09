@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { set } from "react-hook-form";
 import { useQuery } from "react-query";
-import Loading from "../Share/Loading";
+import UserDeletingConfirmation from "../../Components/Modal/UserDeletingConfirmation";
+import Loading from "../../Share/Loading";
 import AdminRow from "./AdminRow";
 
-const MakeAdmin = () => {
+const ManageUser = () => {
+  const [userDeleting, setUserDeleting] = useState(null);
   const {
     data: users,
     isLoading,
@@ -37,13 +39,14 @@ const MakeAdmin = () => {
           </thead>
           <tbody>
             {users.map((user, index) => (
-              <AdminRow key={user._id} users={users} user={user} index={index + 1} refetch={refetch} />
+              <AdminRow key={user._id} users={users} user={user} index={index + 1} setUserDeleting={setUserDeleting} refetch={refetch} />
             ))}
           </tbody>
         </table>
       </div>
+      {userDeleting && <UserDeletingConfirmation refetch={refetch} userDeleting={userDeleting} setUserDeleting={setUserDeleting} />}
     </div>
   );
 };
 
-export default MakeAdmin;
+export default ManageUser;

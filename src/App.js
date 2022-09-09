@@ -10,16 +10,16 @@ import RequireAuth from "./Pages/Signin/RequireAuth";
 import Blogs from "./Pages/Blogs/Blogs";
 import MyProtfolio from "./Pages/MyProtfolio/MyProtfolio";
 import Dashboard from "./Pages/Dashboard/Dashboard";
-import MyOders from "./Pages/Dashboard/MyOders";
+import MyOders from "./Pages/Dashboard/User/MyOders";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import MyProfile from "./Pages/Dashboard/MyProfile/MyProfile";
-import AddReviews from "./Pages/Dashboard/AddReviews";
-import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders";
-import AddProduct from "./Pages/Dashboard/AddProduct";
-import ManageProducts from "./Pages/Dashboard/ManageProducts";
+import AddReviews from "./Pages/Dashboard/User/AddReviews";
+import ManageAllOrders from "./Pages/Dashboard/Admin/ManageAllOrders";
+import AddProduct from "./Pages/Dashboard/Admin/AddProduct";
+import ManageProducts from "./Pages/Dashboard/Admin/ManageProducts";
 import UpdateProfile from "./Pages/Dashboard/MyProfile/UpdateProfile";
-import MakeAdmin from "./Pages/Dashboard/MakeAdmin";
+import ManageUser from "./Pages/Dashboard/Admin/ManageUser";
 import RequireAdmin from "./Pages/Signin/RequireAdmin";
 
 function App() {
@@ -68,10 +68,10 @@ function App() {
             }
           />
           <Route
-            path="makeadmin"
+            path="manage-user"
             element={
               <RequireAdmin>
-                <MakeAdmin />
+                <ManageUser />
               </RequireAdmin>
             }
           />
