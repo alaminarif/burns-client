@@ -45,7 +45,7 @@ const Navbar = () => {
         <li>
           <div className="dropdown">
             <label tabIndex={0}>
-              <img src={ProfileLogin} className="w-16 rounded-full" alt="" />
+              <img src={user.photoURL ? user.photoURL : ProfileLogin} className="w-16 rounded-full" alt="" />
             </label>
             <ul tabIndex={0} className="dropdown-content menu p-2 shadow  rounded-box w-52  mt-[200px]">
               <li>

@@ -21,6 +21,7 @@ const UpdateProfileModal = ({ updateUserModal, setUpdateUserModal, mUsers }) => 
       .then((result) => {
         console.log(result);
         if (result.insertedId) {
+          setUpdateUserModal(null);
           toast.success("success added");
         }
       });
