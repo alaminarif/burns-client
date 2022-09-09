@@ -15,7 +15,7 @@ const ManageProducts = () => {
     isLoading,
     refetch,
   } = useQuery("manageProducts", () => {
-    return fetch("https://shielded-falls-95338.herokuapp.com/purchase").then((res) => res.json());
+    return fetch("https://immense-wave-88332.herokuapp.com/purchase").then((res) => res.json());
   });
   if (isLoading) {
     <Loading />;

@@ -6,7 +6,7 @@ const AddReviews = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    const url = `https://shielded-falls-95338.herokuapp.com/myreview/`;
+    const url = `https://immense-wave-88332.herokuapp.com/myreview/`;
     fetch(url, {
       method: "POST",
       headers: {

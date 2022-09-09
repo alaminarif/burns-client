@@ -12,7 +12,7 @@ const ManageUser = () => {
     isLoading,
     refetch,
   } = useQuery("users", () =>
-    fetch("https://shielded-falls-95338.herokuapp.com/user", {
+    fetch("https://immense-wave-88332.herokuapp.com/user", {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

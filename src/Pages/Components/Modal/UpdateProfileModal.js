@@ -9,7 +9,7 @@ const UpdateProfileModal = ({ updateUserModal, setUpdateUserModal, mUsers }) => 
   const [user] = useAuthState(auth);
 
   const onSubmit = (data) => {
-    const url = `http://localhost:5000/update-profile/${user.email}`;
+    const url = `https://immense-wave-88332.herokuapp.com/update-profile/${user.email}`;
     fetch(url, {
       method: "PUT",
       headers: {

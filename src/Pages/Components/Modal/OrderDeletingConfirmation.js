@@ -5,7 +5,7 @@ const OrderDeletingConfirmation = ({ deletingOder, setDeletingOrder }) => {
   const { _id } = deletingOder;
 
   const handleDelete = () => {
-    const url = `https://shielded-falls-95338.herokuapp.com/oder/${_id}`;
+    const url = `https://immense-wave-88332.herokuapp.com/oder/${_id}`;
 
     fetch(url, {
       method: "DELETE",

@@ -13,7 +13,7 @@ const ManageAllOrders = () => {
     isLoading,
     refetch,
   } = useQuery("manageOders", () => {
-    return fetch("https://shielded-falls-95338.herokuapp.com/alloder").then((res) => res.json());
+    return fetch("https://immense-wave-88332.herokuapp.com/alloder").then((res) => res.json());
   });
 
   if (isLoading) {

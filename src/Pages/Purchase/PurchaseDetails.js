@@ -11,7 +11,7 @@ const PurchaseDetails = () => {
   const [purchase, setPurchase] = useState([]);
   const { name, img, price, minQuantity, avilabeQuantity, description } = purchase;
   useEffect(() => {
-    const url = `https://shielded-falls-95338.herokuapp.com/purchase/${purchaseId}`;
+    const url = `https://immense-wave-88332.herokuapp.com/purchase/${purchaseId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setPurchase(data));
@@ -28,7 +28,7 @@ const PurchaseDetails = () => {
       number: e.target.number.value,
       quantity: e.target.quantity.value,
     };
-    axios.post("https://shielded-falls-95338.herokuapp.com/oder", oder).then((response) => {
+    axios.post("https://immense-wave-88332.herokuapp.com/oder", oder).then((response) => {
       const { data } = response;
       console.log(response);
       // if (data.insertedId) {

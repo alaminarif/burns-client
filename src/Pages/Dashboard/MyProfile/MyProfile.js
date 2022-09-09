@@ -15,7 +15,7 @@ const MyProfile = () => {
 
   const { displayName, email } = user;
   console.log(user);
-  // const url = `http://localhost:5000/myprofile/${email}`;
+  // const url = `https://immense-wave-88332.herokuapp.com/myprofile/${email}`;
   // const { data: users, isLoading } = useQuery("myProfile", () => fetch(url).then((res) => res.json()));
 
   // if (isLoading) {
@@ -24,7 +24,7 @@ const MyProfile = () => {
   // console.log(users);
 
   useEffect(() => {
-    const url = `http://localhost:5000/myprofile/${email}`;
+    const url = `https://immense-wave-88332.herokuapp.com/myprofile/${email}`;
     console.log();
 
     fetch(url)
