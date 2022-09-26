@@ -18,7 +18,6 @@ import AddReviews from "./Pages/Dashboard/User/AddReviews";
 import ManageAllOrders from "./Pages/Dashboard/Admin/ManageAllOrders";
 import AddProduct from "./Pages/Dashboard/Admin/AddProduct";
 import ManageProducts from "./Pages/Dashboard/Admin/ManageProducts";
-import UpdateProfile from "./Pages/Dashboard/Admin/UpdateProfile";
 import ManageUser from "./Pages/Dashboard/Admin/ManageUser";
 import RequireAdmin from "./Pages/Signin/RequireAdmin";
 import CategoriesDetails from "./Pages/Home/CategoriesDetails";
@@ -56,7 +55,7 @@ function App() {
             </RequireAuth>
           }
         />
-        <Route path="/updateprofile" element={<UpdateProfile />} />
+
         <Route path="/myprotfolio" element={<MyProtfolio />} />
         <Route
           path="/dashboard"

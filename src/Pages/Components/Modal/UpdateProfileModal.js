@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import auth from "../../../firebase.init";
 
-const UpdateProfileModal = ({ updateUserModal, setUpdateUserModal, mUsers }) => {
+const UpdateProfileModal = ({ updateUserModal, setUpdateUserModal, users, refetch }) => {
   const { register, handleSubmit, reset } = useForm();
   const [user] = useAuthState(auth);
 
@@ -22,6 +22,7 @@ const UpdateProfileModal = ({ updateUserModal, setUpdateUserModal, mUsers }) => 
         console.log(result);
         if (result.modifiedCount) {
           toast.success("success added");
+          refetch();
         }
       });
     reset();
@@ -35,7 +36,7 @@ const UpdateProfileModal = ({ updateUserModal, setUpdateUserModal, mUsers }) => 
             ✕
           </label>
           <div className="grid grid-cols-1 justify-items-center">
-            <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 justify-items-center gap-6 w-96 bg-base-100  ">
+            <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 justify-items-center gap-6 w-96 bg-base-100  text-black ">
               <input
                 className="input input-bordered w-full mt-6 "
                 placeholder="email"

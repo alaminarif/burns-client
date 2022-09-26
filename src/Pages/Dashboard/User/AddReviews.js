@@ -1,8 +1,11 @@
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import auth from "../../../firebase.init";
 
 const AddReviews = () => {
+  const [user, loading, error] = useAuthState(auth);
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
@@ -28,7 +31,7 @@ const AddReviews = () => {
     <div>
       <h3 className="font-bold text-2xl py-6 text-center"> Add A Review</h3>
       <form className="flex justify-center" onSubmit={handleSubmit(onSubmit)}>
-        <div className="grid grid-cols-1 justify-items-center gap-6 py-6 w-96 bg-base-100 shadow-xl px-8 rounded-xl">
+        <div className="grid grid-cols-1 justify-items-center gap-6 py-6 w-96 bg-base-100 shadow-xl px-8 rounded-xl text-black">
           <input className="input input-bordered w-full " placeholder="Name" type="text" {...register("name")} />
           <input className="input input-bordered w-full " placeholder="Rating" type="text" {...register("rating")} />
           <input className="input input-bordered w-full " placeholder="Date" type="date" {...register("date")} />

@@ -41,9 +41,9 @@ const NewCategoriesDetails = () => {
   };
 
   return (
-    <div className="shadow-xl w-9/12 mx-auto ">
-      <div className="card  lg:card-side bg-base-100   my-12 p-8">
-        <div className="">
+    <div className="shadow-xl w-9/12 mx-auto pb-16 ">
+      <div className="card  lg:card-side bg-base-100 p-8">
+        <div className="text-black">
           <figure>
             <img src={img} className="  rounded" alt="Album" />
           </figure>
@@ -56,7 +56,7 @@ const NewCategoriesDetails = () => {
         </div>
 
         <div className=" card-body w-9/12 mt-0">
-          <form onSubmit={handleSubmit} className=" grid grid-cols-1 justify-items-center gap-6 w-96 bg-base-100 shadow-xl px-8 ">
+          <form onSubmit={handleSubmit} className=" grid grid-cols-1 justify-items-center gap-6 w-96 bg-base-100 shadow-xl text-black px-8 ">
             <input type="text" name="name" readOnly value={user?.displayName} className="input input-bordered  w-full" />
             <input type="text" name="email" readOnly value={user?.email} className="input input-bordered   w-full" />
             <input type="text" name="number" placeholder="Number" className="input input-bordered w-full" />

@@ -10,27 +10,27 @@ import ProfileLogin from "../../../Images/profile-login.png";
 
 const MyProfile = () => {
   const [user] = useAuthState(auth);
-  const [mUsers, mSetUser] = useState([]);
+  // const [users, mSetUser] = useState([]);
   const [updateUserModal, setUpdateUserModal] = useState(null);
 
   const { displayName, email, photoURL } = user;
-  console.log(user);
-  // console.log(photoURL);
-  // const url = `https://immense-wave-88332.herokuapp.com/myprofile/${email}`;
-  // const { data: users, isLoading } = useQuery("myProfile", () => fetch(url).then((res) => res.json()));
 
-  // if (isLoading) {
-  //   <Loading />;
-  // }
-  // console.log(users);
+  console.log(photoURL);
+  const url = `https://immense-wave-88332.herokuapp.com/myprofile/${email}`;
+  const { data: users, isLoading, refetch } = useQuery("myProfile", () => fetch(url).then((res) => res.json()));
 
-  useEffect(() => {
-    const url = `https://immense-wave-88332.herokuapp.com/myprofile/${email}`;
+  if (isLoading) {
+    return <Loading />;
+  }
+  console.log(users);
 
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => mSetUser(data));
-  }, []);
+  // useEffect(() => {
+  //   const url = `https://immense-wave-88332.herokuapp.com/myprofile/${email}`;
+
+  //   fetch(url)
+  //     .then((res) => res.json())
+  //     .then((data) => mSetUser(data));
+  // }, []);
 
   return (
     <div className="">
@@ -48,14 +48,14 @@ const MyProfile = () => {
             <span className="text-xl">Email :</span> {email}
           </p>
           <p className="font-bold  mt-2">
-            <span className="text-xl">Education :</span> {mUsers.length ? mUsers[0].education : "not avbileabel"}
+            <span className="text-xl">Education :</span> {users.length ? users[0].education : "not avbileabel"}
           </p>
           <p className="font-bold mt-2">
             {" "}
-            <span className="text-xl">Number :</span> {mUsers.length ? mUsers[0].number : "not a number"}
+            <span className="text-xl">Number :</span> {users.length ? users[0].number : "not a number"}
           </p>
           <p className="font-bold mt-2">
-            <span className="text-xl">City : </span> {mUsers.length ? mUsers[0].address : "not a address"}
+            <span className="text-xl">City : </span> {users.length ? users[0].address : "not a address"}
           </p>
           <label htmlFor="update-profile-modal" onClick={() => setUpdateUserModal({})} className="btn btn-primary my-4">
             Update Profile
@@ -63,7 +63,7 @@ const MyProfile = () => {
         </div>
       </div>
       {updateUserModal && (
-        <UpdateProfileModal updateUserModal={updateUserModal} setUpdateUserModal={updateUserModal} mUsers={mUsers} mSetUser={mSetUser} />
+        <UpdateProfileModal updateUserModal={updateUserModal} setUpdateUserModal={updateUserModal} refetch={refetch} users={users} />
       )}
     </div>
   );

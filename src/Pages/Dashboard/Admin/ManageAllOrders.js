@@ -17,7 +17,7 @@ const ManageAllOrders = () => {
   });
 
   if (isLoading) {
-    <Loading />;
+    return <Loading />;
   }
   return (
     <div>

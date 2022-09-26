@@ -30,7 +30,7 @@ const MainBanner = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={mainBannr} className="max-w-full lg:w-full rounded-lg shadow-2xl " alt="" />
         <div>
-          <h1 className="text-5xl font-bold">best hand tools and sales available</h1>
+          <h1 className="text-4xl font-bold uppercase mr-">best hand tools and sales available</h1>
           <p className="py-6 w- mr-6">
             Silica gel packs are excellent for keeping rust away. All you have to do is throw the packs in a drawer or your toolbox.
           </p>
