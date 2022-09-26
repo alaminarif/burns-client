@@ -23,7 +23,7 @@ const AdminRow = ({ user, index, refetch, setUserDeleting }) => {
   };
 
   return (
-    <tr>
+    <tr className="text-black">
       <th>{index}</th>
 
       <td>${email}</td>

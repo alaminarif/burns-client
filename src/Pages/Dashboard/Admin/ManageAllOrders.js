@@ -25,7 +25,7 @@ const ManageAllOrders = () => {
         <h3 className="font-bold text-2xl py-6 text-center">Manage All Orders</h3>
         <table className="table w-full">
           <thead>
-            <tr>
+            <tr className="text-black">
               <th>No</th>
               <th>Id</th>
               <th>Quantity</th>
@@ -35,7 +35,7 @@ const ManageAllOrders = () => {
           </thead>
           <tbody>
             {oders?.map((oder, index) => (
-              <tr>
+              <tr className="text-black">
                 <th>{index + 1}</th>
                 <td>{oder._id}</td>
                 <td>{oder.quantity}</td>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap");
 .App {
   text-align: center;
 }
@@ -12,7 +13,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.bag-color {
+  background: linear-gradient(to right, #42275a, #734b6d);
+  font-family: "Poppins", sans-serif;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

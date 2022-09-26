@@ -1,0 +1,73 @@
+[
+  {
+    "name": "adjustable_wrench",
+    "img": "https://i.ibb.co/x37LRg5/adjustable-wrench.png",
+    "description": " Large saw table made of die-cast aluminium (400 x 250mm). For easier saw blade replacement. Additional suction connection to connect a vacuum cleaner. ",
+    "minQuantity": "100",
+    "avilabeQuantity": "950",
+    "price": 520
+  },
+  {
+    "id": 122,
+    "name": "HACKSAW",
+    "img": "https://i.ibb.co/jfx6Pwc/AKD-20006.png",
+    "description": " Regular scroll saw blades are fastened by saw blade holders with high clamping force: Magnesium saw arms precisely mounted on bearings:   ",
+    "minQuantity": "90",
+    "avilabeQuantity": "900",
+    "price": 420
+  },
+  {
+    "id": 123,
+    "name": "PLIERS WITH PLASTIC HANDLE",
+    "img": "https://i.ibb.co/QHfHTKW/APT-3637-K01.png",
+    "description": "it can be unlocked and pushed back (see description at top right). Regular scroll saw blades are fastened by saw blade holders with high clamping force: ",
+    "minQuantity": "80",
+    "avilabeQuantity": "800",
+    "price": 460
+  },
+  {
+    "id": 124,
+    "name": "HAND SCREWDRIVER",
+    "img": "https://i.ibb.co/7YWfcVp/ASD-500-K11.png",
+    "description": " Chip blowing device with adjustable nozzle. Additional suction connection to connect a vacuum cleaner. Large saw table made of die-cast.  ",
+    "minQuantity": "110",
+    "avilabeQuantity": "1100",
+    "price": 450
+  },
+  {
+    "id": 125,
+    "name": "PUNCH & CHISEL",
+    "img": "https://i.ibb.co/zNMb9f0/APH-10001.png",
+    "description": "Magnesium saw arms precisely mounted on bearings: Extremely light and firm with a slender-shaped cutting area for an unobstructed view of the work piece. ",
+    "minQuantity": "70",
+    "avilabeQuantity": "700",
+    "price": 430
+  },
+  {
+    "id": 126,
+    "name": "WRENCH SERIES",
+    "img": "https://i.ibb.co/xXHjv4G/european-type-double-open-end-wrench.png",
+    "description": " Additional suction connection to connect a vacuum cleaner. Large saw table made of die-cast aluminium (400 x 250mm). For easier saw blade replacement",
+    "minQuantity": "50",
+    "avilabeQuantity": "500",
+    "price": 420
+  },
+  {
+    "id": 127,
+    "name": "HAMMERS",
+    "img": "https://i.ibb.co/3kK5mp9/hammers.png",
+    "description": "it can be unlocked and pushed back (see description at top right). Regular scroll saw blades are fastened by saw blade holders with high clamping force: ",
+    "minQuantity": "80",
+    "avilabeQuantity": "800",
+    "price": 560
+  },
+  {
+    "id": 128,
+    "name": "OTHERS",
+    "img": "https://i.ibb.co/74C90bD/AET-0150.png",
+    "description": " Chip blowing device with adjustable nozzle. Additional suction connection to connect a vacuum cleaner. Large saw table made of die-cast.  ",
+    "minQuantity": "110",
+    "avilabeQuantity": "1100",
+    "price": 660
+  }
+]

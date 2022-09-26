@@ -21,7 +21,7 @@ const MyOders = () => {
         <h3 className="font-bold text-2xl my-6 text-center"> My Oders</h3>
         <table className="table w-full">
           <thead>
-            <tr>
+            <tr className="text-black">
               <th>No</th>
               <th>Id</th>
               <th>Quantity</th>
@@ -31,7 +31,7 @@ const MyOders = () => {
           </thead>
           <tbody>
             {oders.map((oder, index) => (
-              <tr>
+              <tr className="text-black">
                 <th>{index + 1}</th>
                 <td>{oder._id}</td>
                 <td>{oder.quantity}</td>

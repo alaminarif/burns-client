@@ -39,7 +39,7 @@ const Signup = () => {
     <div className="h-screen flex justify-center items-center">
       <div className="card w-96 bg-base-100 shadow-xl rounded-xl">
         <div className="card-body">
-          <h2 className="text-center text-2xl font-bold">Sign in</h2>
+          <h2 className="text-center text-2xl font-bold text-slate-600 uppercase">Sign up</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-control w-full max-w-xs">
               <label className="label">
@@ -111,7 +111,7 @@ const Signup = () => {
             {signInError}
             <input className="btn w-full max-w-xs text-white btn-primary" type="submit" value="Sign Up" />
           </form>
-          <p className="text-center">
+          <p className="text-center text-black">
             already account?{" "}
             <Link to="/signin" className="text-primary">
               please sign in

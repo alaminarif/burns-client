@@ -27,7 +27,7 @@ const ManageProducts = () => {
       <div className="overflow-x-auto">
         <table className="table w-full">
           <thead>
-            <tr>
+            <tr className="text-black">
               <th>No</th>
               <th>Product Name</th>
               <th>price</th>
@@ -36,7 +36,7 @@ const ManageProducts = () => {
           </thead>
           <tbody>
             {products?.map((product, index) => (
-              <tr>
+              <tr className="text-black">
                 <th>{index + 1}</th>
                 <td>{product.name}</td>
                 <td>${product.price}</td>

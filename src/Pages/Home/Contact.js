@@ -3,7 +3,8 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="">
-      <h3 className="text-center text-4xl tracking-widest font-bold mb-16 my-8 uppercase">Contact</h3>
+      <h3 className="text-center text-4xl tracking-widest font-bold mt-20 uppercase">Contact</h3>
+      <div className="w-24 mt-4 mx-auto rounded h-1 bg-primary mb-20 "></div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 pb-10 justify-items-center">
         <div className="mt-12">

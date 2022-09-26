@@ -3,7 +3,7 @@ import React from "react";
 const Review = ({ review }) => {
   const { img, rating, shortDes, description, name, date } = review;
   return (
-    <div className="text-center w-96 bg-base-100 shadow-xl rounded-xl p-8 ">
+    <div className="text-center w-96 bg-base-100 text-black shadow-xl rounded-xl p-8 ">
       <img src={img} className="w-3/12 mx-auto " alt="" />
       <h5 className="my-2">{name}</h5>
       <p className="ratingDate">

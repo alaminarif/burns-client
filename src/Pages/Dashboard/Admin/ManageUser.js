@@ -29,7 +29,7 @@ const ManageUser = () => {
       <div className="overflow-x-auto">
         <table className="table w-full">
           <thead>
-            <tr>
+            <tr className="text-black">
               <th>No</th>
 
               <th>user</th>
