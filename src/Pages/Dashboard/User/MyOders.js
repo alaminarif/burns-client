@@ -1,19 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { useQuery } from "react-query";
 import auth from "../../../firebase.init";
 import OrderDeletingConfirmation from "../../Components/Modal/OrderDeletingConfirmation";
+import Loading from "../../Share/Loading";
 
 const MyOders = () => {
   const [user] = useAuthState(auth);
-  const [oders, setOder] = useState([]);
-  const [deletingOder, setDeletingOder] = useState(null);
-  useEffect(() => {
-    const url = `https://immense-wave-88332.herokuapp.com/oder?email=${user.email}`;
 
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => setOder(data));
-  }, [user]);
+  const [deletingOder, setDeletingOder] = useState(null);
+
+  const { data: oders, isLoading } = useQuery("myOder", () => {
+    const url = `https://immense-wave-88332.herokuapp.com/oder?email=${user.email}`;
+    return fetch(url).then((res) => res.json());
+  });
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <div>

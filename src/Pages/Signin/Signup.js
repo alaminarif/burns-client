@@ -48,7 +48,7 @@ const Signup = () => {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-black"
                 {...register("name", {
                   required: {
                     value: true,
@@ -67,7 +67,7 @@ const Signup = () => {
               <input
                 type="email"
                 placeholder="Your Email"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-black"
                 {...register("email", {
                   required: {
                     value: true,
@@ -91,7 +91,7 @@ const Signup = () => {
               <input
                 type="password"
                 placeholder="Password"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-black"
                 {...register("password", {
                   required: {
                     value: true,

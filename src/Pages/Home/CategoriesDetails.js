@@ -41,10 +41,10 @@ const CategoriesDetails = () => {
     });
   };
   return (
-    <div className="shadow-xl w-9/12 mx-auto ">
-      <div className="card  lg:card-side bg-base-100   my-12 p-8">
+    <div className="shadow-xl w-9/12 h-screen mt-10 mx-auto ">
+      <div className="card  lg:card-side bg-base-100 p-8">
         <div className=" text-black">
-          <figure className="w-3/4">
+          <figure className="w-3/6">
             <img src={img} className=" rounded" alt="Album" />
           </figure>
           <h2 className="card-title">{name}</h2>

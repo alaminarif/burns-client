@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useQuery } from "react-query";
 import Loading from "../../Share/Loading";
 import ManageAllOrderDeletingConfirmation from "../../Components/Modal/ManageAllOrderDeletingConfirmation";
 
 const ManageAllOrders = () => {
-  // const [oders, setOder] = useState([]);
-
   const [deletingOder, setDeletingOrder] = useState(null);
 
   const {
@@ -19,6 +17,7 @@ const ManageAllOrders = () => {
   if (isLoading) {
     return <Loading />;
   }
+
   return (
     <div>
       <div className="overflow-x-auto">

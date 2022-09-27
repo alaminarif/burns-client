@@ -4,8 +4,6 @@ import CountUp from "react-countup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFlag, faMessage, faRectangleList, faUsers } from "@fortawesome/free-solid-svg-icons";
 const BusinessSummary = () => {
-  // const Business =
-
   return (
     <div
       style={{

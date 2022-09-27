@@ -4,21 +4,7 @@ import Loading from "../Share/Loading";
 import NewCagetory from "./NewCagetory";
 
 const NewCategories = () => {
-  // const [tools, setTools] = useState([]);
-
-  // useEffect(() => {
-  //   fetch("https://immense-wave-88332.herokuapp.com/purchase")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setTools(data);
-  //     });
-  // }, []);
-
-  const {
-    data: tools,
-    isLoading,
-    refetch,
-  } = useQuery("manageOders", () => {
+  const { data: tools, isLoading } = useQuery("newCategories", () => {
     return fetch("https://immense-wave-88332.herokuapp.com/purchase").then((res) => res.json());
   });
   if (isLoading) {

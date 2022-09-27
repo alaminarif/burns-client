@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import auth from "../../../firebase.init";
 
-const UpdateProfileModal = ({ updateUserModal, setUpdateUserModal, users, refetch }) => {
+const UpdateProfileModal = ({ refetch }) => {
   const { register, handleSubmit, reset } = useForm();
   const [user] = useAuthState(auth);
 

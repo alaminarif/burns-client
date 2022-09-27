@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useQuery } from "react-query";
 import auth from "../../../firebase.init";
@@ -7,7 +7,6 @@ import Loading from "../../Share/Loading";
 
 const ManageProducts = () => {
   const [user] = useAuthState(auth);
-  // const [products, setproduct] = useState([]);
   const [deletingProduct, setDeletingProduct] = useState(null);
 
   const {
@@ -17,8 +16,9 @@ const ManageProducts = () => {
   } = useQuery("manageProducts", () => {
     return fetch("https://immense-wave-88332.herokuapp.com/purchase").then((res) => res.json());
   });
+
   if (isLoading) {
-    <Loading />;
+    return <Loading />;
   }
 
   return (

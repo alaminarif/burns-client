@@ -10,27 +10,15 @@ import ProfileLogin from "../../../Images/profile-login.png";
 
 const MyProfile = () => {
   const [user] = useAuthState(auth);
-  // const [users, mSetUser] = useState([]);
   const [updateUserModal, setUpdateUserModal] = useState(null);
-
   const { displayName, email, photoURL } = user;
 
-  console.log(photoURL);
   const url = `https://immense-wave-88332.herokuapp.com/myprofile/${email}`;
   const { data: users, isLoading, refetch } = useQuery("myProfile", () => fetch(url).then((res) => res.json()));
 
   if (isLoading) {
     return <Loading />;
   }
-  console.log(users);
-
-  // useEffect(() => {
-  //   const url = `https://immense-wave-88332.herokuapp.com/myprofile/${email}`;
-
-  //   fetch(url)
-  //     .then((res) => res.json())
-  //     .then((data) => mSetUser(data));
-  // }, []);
 
   return (
     <div className="">

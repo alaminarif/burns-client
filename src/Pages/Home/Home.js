@@ -12,14 +12,12 @@ import SwiperTest from "../../SwiperTest";
 const Home = () => {
   return (
     <div className="">
-      {/* <SwiperTest /> */}
       <MainBanner />
       <Categories />
       <NewCategories />
       <Banner />
       <Reviews />
       <Contact />
-
       <BusinessSummary />
       <Footer />
     </div>

@@ -45,7 +45,7 @@ const Signin = () => {
               <input
                 type="email"
                 placeholder="Your Email"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-black"
                 {...register("email", {
                   required: {
                     value: true,
@@ -69,7 +69,7 @@ const Signin = () => {
               <input
                 type="password"
                 placeholder="Password"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs text-black"
                 {...register("password", {
                   required: {
                     value: true,

@@ -45,7 +45,7 @@ const NewCategoriesDetails = () => {
       <div className="card  lg:card-side bg-base-100 p-8">
         <div className="text-black">
           <figure>
-            <img src={img} className="  rounded" alt="Album" />
+            <img src={img} className=" w-3/6  rounded" alt="Album" />
           </figure>
           <h2 className="card-title">{name}</h2>
           <p className="">{description}</p>
