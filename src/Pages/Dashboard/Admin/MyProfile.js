@@ -13,7 +13,7 @@ const MyProfile = () => {
   const [updateUserModal, setUpdateUserModal] = useState(null);
   const { displayName, email, photoURL } = user;
 
-  const url = `https://immense-wave-88332.herokuapp.com/myprofile/${email}`;
+  const url = `https://hand-tools.onrender.com/myprofile/${email}`;
   const { data: users, isLoading, refetch } = useQuery("myProfile", () => fetch(url).then((res) => res.json()));
 
   if (isLoading) {

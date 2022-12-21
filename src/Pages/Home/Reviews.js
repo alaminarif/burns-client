@@ -17,7 +17,7 @@ import "swiper/css/scrollbar";
 const Reviews = () => {
   // const [reviews, setReview] = useState([]);
   // useEffect(() => {
-  //   fetch("https://immense-wave-88332.herokuapp.com/review")
+  //   fetch("https://hand-tools.onrender.com/review")
   //     .then((res) => res.json())
   //     .then((data) => {
   //       setReview(data);
@@ -28,7 +28,7 @@ const Reviews = () => {
     isLoading,
     refetch,
   } = useQuery("reviews", () => {
-    return fetch("https://immense-wave-88332.herokuapp.com/review").then((res) => res.json());
+    return fetch("https://hand-tools.onrender.com/review").then((res) => res.json());
   });
 
   if (isLoading) {

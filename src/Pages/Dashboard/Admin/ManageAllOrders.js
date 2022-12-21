@@ -11,7 +11,7 @@ const ManageAllOrders = () => {
     isLoading,
     refetch,
   } = useQuery("manageOders", () => {
-    return fetch("https://immense-wave-88332.herokuapp.com/alloder").then((res) => res.json());
+    return fetch("https://hand-tools.onrender.com/alloder").then((res) => res.json());
   });
 
   if (isLoading) {

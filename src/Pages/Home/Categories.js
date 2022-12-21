@@ -7,7 +7,7 @@ const Categories = () => {
   const navigate = useNavigate();
 
   const { data: categories, isLoading } = useQuery("categories", () => {
-    return fetch("https://immense-wave-88332.herokuapp.com/categories").then((res) => res.json());
+    return fetch("https://hand-tools.onrender.com/categories").then((res) => res.json());
   });
 
   if (isLoading) {

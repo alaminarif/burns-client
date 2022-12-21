@@ -6,7 +6,7 @@ const UserDeletingConfirmation = ({ userDeleting, refetch, setUserDeleting }) =>
   console.log(userDeleting);
 
   const handleDelete = () => {
-    const url = `https://immense-wave-88332.herokuapp.com/user/${_id}`;
+    const url = `https://hand-tools.onrender.com/user/${_id}`;
     fetch(url, {
       method: "DELETE",
     })

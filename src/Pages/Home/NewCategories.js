@@ -5,7 +5,7 @@ import NewCagetory from "./NewCagetory";
 
 const NewCategories = () => {
   const { data: tools, isLoading } = useQuery("newCategories", () => {
-    return fetch("https://immense-wave-88332.herokuapp.com/purchase").then((res) => res.json());
+    return fetch("https://hand-tools.onrender.com/purchase").then((res) => res.json());
   });
   if (isLoading) {
     return <Loading />;

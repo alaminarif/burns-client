@@ -6,7 +6,7 @@ const AdminRow = ({ user, index, refetch, setUserDeleting }) => {
   const handleManageUser = () => {
     const procced = window.confirm("are you sure?");
     if (procced) {
-      const url = `https://immense-wave-88332.herokuapp.com/user/admin/${email}`;
+      const url = `https://hand-tools.onrender.com/user/admin/${email}`;
       console.log(url);
       fetch(url, {
         method: "PUT",

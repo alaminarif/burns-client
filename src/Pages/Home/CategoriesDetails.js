@@ -12,7 +12,7 @@ const CategoriesDetails = () => {
   const [user, loading, error] = useAuthState(auth);
   const [categoriesDetails, setCategoriesDetails] = useState({});
   useEffect(() => {
-    const url = `https://immense-wave-88332.herokuapp.com/categories/${categoriesID}`;
+    const url = `https://hand-tools.onrender.com/categories/${categoriesID}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setCategoriesDetails(data));
@@ -29,7 +29,7 @@ const CategoriesDetails = () => {
       number: e.target.number.value,
       quantity: e.target.quantity.value,
     };
-    axios.post("https://immense-wave-88332.herokuapp.com/oder", oder).then((response) => {
+    axios.post("https://hand-tools.onrender.com/oder", oder).then((response) => {
       const { data } = response;
       console.log(response);
       if (data.insertedId) {

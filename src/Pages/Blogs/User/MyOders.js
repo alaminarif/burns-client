@@ -8,7 +8,7 @@ const MyOders = () => {
   const [oders, setOder] = useState([]);
   const [deletingOder, setDeletingOder] = useState(null);
   useEffect(() => {
-    const url = `https://immense-wave-88332.herokuapp.com/oder?email=${user.email}`;
+    const url = `https://hand-tools.onrender.com/oder?email=${user.email}`;
 
     fetch(url)
       .then((res) => res.json())

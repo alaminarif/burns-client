@@ -9,7 +9,7 @@ const UpdateProfileModal = ({ refetch }) => {
   const [user] = useAuthState(auth);
 
   const onSubmit = (data) => {
-    const url = `https://immense-wave-88332.herokuapp.com/update-profile/${user.email}`;
+    const url = `https://hand-tools.onrender.com/update-profile/${user.email}`;
     fetch(url, {
       method: "PUT",
       headers: {

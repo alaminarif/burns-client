@@ -5,7 +5,7 @@ const ProductDeletingConfirmation = ({ deletingProduct, setDeletingProduct, refe
   const { name, _id } = deletingProduct;
 
   const handleDelete = () => {
-    const url = `https://immense-wave-88332.herokuapp.com/purchase/${_id}`;
+    const url = `https://hand-tools.onrender.com/purchase/${_id}`;
 
     fetch(url, {
       method: "DELETE",

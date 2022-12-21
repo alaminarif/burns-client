@@ -11,7 +11,7 @@ const MyOders = () => {
   const [deletingOder, setDeletingOder] = useState(null);
 
   const { data: oders, isLoading } = useQuery("myOder", () => {
-    const url = `https://immense-wave-88332.herokuapp.com/oder?email=${user.email}`;
+    const url = `https://hand-tools.onrender.com/oder?email=${user.email}`;
     return fetch(url).then((res) => res.json());
   });
 

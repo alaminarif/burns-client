@@ -11,7 +11,7 @@ const NewCategoriesDetails = () => {
   const [purchase, setPurchase] = useState([]);
   const { name, img, price, minQuantity, avilabeQuantity, description } = purchase;
   useEffect(() => {
-    const url = `https://immense-wave-88332.herokuapp.com/purchase/${purchaseId}`;
+    const url = `https://hand-tools.onrender.com/purchase/${purchaseId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setPurchase(data));
@@ -28,7 +28,7 @@ const NewCategoriesDetails = () => {
       number: e.target.number.value,
       quantity: e.target.quantity.value,
     };
-    axios.post("https://immense-wave-88332.herokuapp.com/oder", oder).then((response) => {
+    axios.post("https://hand-tools.onrender.com/oder", oder).then((response) => {
       const { data } = response;
       console.log(response);
       // if (data.insertedId) {

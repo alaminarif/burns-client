@@ -2,7 +2,7 @@
 
 Burns Client Side [https://assignment-12-8ce0f.web.app/](https://assignment-12-8ce0f.web.app/).
 
-Burns Server Side[https://immense-wave-88332.herokuapp.com/](https://immense-wave-88332.herokuapp.com/)
+Burns Server Side[https://hand-tools.onrender.com/](https://hand-tools.onrender.com/)
 
 ## Website Descreption:
 

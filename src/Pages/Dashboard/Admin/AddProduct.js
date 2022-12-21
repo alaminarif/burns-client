@@ -7,7 +7,7 @@ const AddProduct = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    const url = `https://immense-wave-88332.herokuapp.com/purchase`;
+    const url = `https://hand-tools.onrender.com/purchase`;
     fetch(url, {
       method: "POST",
       headers: {

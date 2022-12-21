@@ -14,7 +14,7 @@ const ManageProducts = () => {
     isLoading,
     refetch,
   } = useQuery("manageProducts", () => {
-    return fetch("https://immense-wave-88332.herokuapp.com/purchase").then((res) => res.json());
+    return fetch("https://hand-tools.onrender.com/purchase").then((res) => res.json());
   });
 
   if (isLoading) {
